@@ -22,6 +22,7 @@ from django.http import HttpResponse
 
 
 
+
 class Home (APIView):
     template_name="Menu.html"
     def get(self, request):
