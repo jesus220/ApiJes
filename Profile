@@ -1,0 +1,1 @@
+web: gunicorn ApiJesus.wsgi:application --log-file -
