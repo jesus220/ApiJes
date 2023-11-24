@@ -37,11 +37,7 @@ urlpatterns = [
     path('register/', RegistroUsuarioView.register, name= 'register'),
     path('login/', LoginView.as_view(template_name="login.html"), name= 'login'),
     path('chart/', views.chart_view, name='chart_view'),
-    path('checkout/<int:product_id>/', views.CheckOut, name='checkout'),
-    path('payment-success/<int:product_id>/', views.PaymentSuccessful, name='payment-success'),
-    path('payment-failed/<int:product_id>/', views.paymentFailed, name='payment-failed'),
-    path('',include('paypal.standard.ipn.urls')),
-    path('', views.ProductView, name='products'),
+
  
     
 
