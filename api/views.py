@@ -16,19 +16,19 @@ from .models import General
 from django.db.models import Count
 from django.shortcuts import render
 from django.http import HttpResponse
-from paypalrestsdk import Payment
-from django.urls import reverse
-from django.conf import settings
-from django.shortcuts import render
-from django.http import HttpResponse
+# from paypalrestsdk import Payment
+# from django.urls import reverse
+# from django.conf import settings
+# from django.shortcuts import render
+# from django.http import HttpResponse
 
-from paypal.standard.forms import PayPalPaymentsForm
-from django.conf import settings
-import uuid
-from django.urls import reverse
+# from paypal.standard.forms import PayPalPaymentsForm
+# from django.conf import settings
+# import uuid
+# from django.urls import reverse
 
-from django.shortcuts import render
-from api.models import Product
+# from django.shortcuts import render
+# from api.models import Product
 
 
 
