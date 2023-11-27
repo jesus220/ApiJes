@@ -1,0 +1,753 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Quicksand", sans-serif !important;
+  }
+  
+  h1 {
+    font-family: "Mr Dafoe", cursive !important;
+    font-size: 130px !important;
+  }
+  
+  h2 {
+    font-family: "Quicksand", sans-serif !important;
+    font-size: 35px !important;
+    font-weight: 400 !important;
+  }
+  
+  h3 {
+    font-family: "Mr Dafoe", cursive !important;
+    font-size: 65px !important;
+  }
+  
+  h4 {
+    font-family: "Mr Dafoe", cursive !important;
+    font-size: 43px !important;
+  }
+  
+  h5 {
+    font-family: "Quicksand", sans-serif !important;
+    font-size: 40px !important;
+  }
+  
+  h6 {
+    font-family: "Quicksand", sans-serif !important;
+    font-size: 25px !important;
+    font-weight: 300 !important;
+  }
+  
+  .home {
+    background-image: url("../img/POrtada.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    color: #fff;
+    padding: 20px 30px;
+  }
+  
+  .bar-menu {
+    padding: 0px !important;
+    height: 60px;
+    width: 95%;
+    background-color: #1a233a;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    z-index: 20;
+  }
+  
+  .contactos {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icono {
+    height: 30px;
+    padding-right: 25px;
+  }
+  
+  .info {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400px;
+    color: #2bb8cc;
+  }
+  
+  .info:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .division {
+    height: 40px;
+    padding: 0px 30px;
+  }
+  
+  .txt {
+    flex-wrap: wrap;
+  }
+  
+  .location:hover {
+    background-color: #253251;
+    padding: 10px 0;
+  }
+  
+  .phone:hover {
+    background-color: #253251;
+    padding: 10px 0;
+  }
+  
+  .logo-area {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .opciones {
+    color: #2bb8cc;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .search-input {
+    border-bottom: 1px solid #2bb8cc;
+    margin-left: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    display: flex;
+    padding: 0 !important;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .arrow {
+    height: 6px;
+    margin-left: 20px;
+    padding: 0px 20px;
+  }
+  
+  .arrow:hover {
+    text-decoration: none;
+    color: #2bb8cc;
+  }
+  
+  .search {
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2bb8cc;
+  }
+  
+  ::placeholder {
+    color: #2bb8cc;
+    font-size: 14px;
+  }
+  
+  .menu-btn {
+    background-color: rgba(43, 184, 204, 0.4);
+    padding: 20px 20px;
+    margin-left: 10px;
+    padding-right: 0 !important;
+    display: flex;
+    align-content: center;
+  }
+  
+  .menu-btn:hover {
+    background-image: url("https://s18.postimg.cc/dloem5n21/menu_azul-02.png");
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center center;
+    background-color: #2bb8cc;
+  }
+  
+  .icono-menu {
+    width: 30px;
+    margin: 0px 30px;
+  }
+  
+  .home-content {
+    display: flex;
+    align-items: center;
+    margin-top: 200px;
+    margin-bottom: 120px;
+  }
+  
+  .line {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  
+  .btn-design {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #2bb8cc;
+    padding: 16px 50px;
+    transition: all.3s;
+    background-image: url("https://s18.postimg.cc/g6tz9g789/Dise_o_BTN-03.png");
+    background-repeat: no-repeat;
+    background-size: 98%;
+  }
+  
+  .btn-design:hover {
+    background-color: #2bb8cc;
+    transition: all ease 0.5s;
+    text-decoration: none;
+    color: #1a233a;
+    font-weight: 700 !important;
+    background-size: 100%;
+  }
+  
+  .ola {
+    display: flex;
+    align-content: flex-end;
+    padding: 0 !important;
+    margin-top: 150px;
+  }
+  
+  .ola-blanca {
+    width: 100%;
+    padding: 0 !important;
+  }
+  
+  .sec-about {
+    color: #99d8dd;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 160px;
+    padding-top: 60px;
+    background-image: url("../img/postre.png");
+    background-size: 75%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .titles {
+    padding-bottom: 100px;
+  }
+  
+  .img-2 {
+    background-image: url("../img/pasta.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 180px 0px;
+    margin-top: -80px;
+    box-shadow: 0 -7px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 15;
+  }
+  
+  .brochazo-2 {
+    height: 120%;
+    margin-top: -280px;
+    padding-bottom: 100px;
+    margin-left: 10px;
+    position: absolute;
+  }
+  
+  .chef {
+    width: 100%;
+    margin-top: -140px;
+    z-index: 10;
+  }
+  
+  .info-about {
+    background-color: #c7dcdd;
+    margin-top: -360px;
+    z-index: -5;
+  }
+  
+  .about-content {
+    padding: 138px 90px 60px 90px;
+  }
+  
+  .quote {
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 120px;
+  }
+  
+  .food-title {
+    background-image: url("https://s18.postimg.cc/97p41wm55/brochazo_Menu_Comida-05.png");
+    background-repeat: no-repeat;
+    margin-bottom: 60px;
+  }
+  
+  .category {
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .category-image {
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .category-image2 {
+    height: 50vh;
+    width: 100%;
+  }
+  
+  .category-content {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
+    text-align: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 60px;
+  }
+  
+  .filter {
+    width: 100%;
+    height: 100vh;
+    background: rgba(26, 35, 58, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all.3s;
+  }
+  
+  .category:hover .filter {
+    left: 100%;
+  }
+  
+  .primer-titulo {
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300 !important;
+    z-index: 10;
+  }
+  
+  .seg-titulo {
+    margin-top: -25px;
+    z-index: 1;
+  }
+  
+  .comida {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    z-index: 35;
+  }
+  
+  .title-contact-card {
+    padding-top: 120px;
+    color: #2bb8cc;
+    z-index: 10;
+  }
+  
+  .subrayar-contacto {
+    width: 100%;
+  }
+  
+  .ficha {
+    padding: 90px 90px 60px 90px !important;
+    background-color: #e0e8eb;
+    margin-top: -120px;
+  }
+  
+  .title-ficha {
+    padding-right: 200px;
+    margin-bottom: 60px;
+  }
+  
+  .suscripcion {
+    background: none;
+    color: #2bb8cc;
+    font-size: 25px;
+    font-family: quicksand;
+    font-weight: light;
+    text-align: left;
+    display: block;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #2bb8cc;
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px;
+  }
+  
+  .btn-suscribe {
+    margin-top: 90px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .quote {
+    font-size: 25px;
+    font-weight: bold;
+    color: #2bb8cc;
+    margin-bottom: 120px;
+  }
+  
+  .footer-fondo {
+    background-image: url("https://s31.postimg.cc/dkbzog9ij/footer-fondo-01.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 100px;
+  }
+  
+  .footer-info {
+  }
+  
+  .info-footer-container {
+    background-color: #1a233a;
+  }
+  
+  .footer-logo {
+    width: 100%;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+  
+  .botones-footer {
+    color: #2bb8cc;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  
+  .boton-menu-footer {
+    color: #2bb8cc;
+    margin: 10px;
+    background-color: #1a233a;
+  }
+  
+  .boton-menu-footer:hover {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .social-media-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-items: flex-end;
+    padding: 0 !important;
+  }
+  
+  .title-social-media {
+    color: #2bb8cc;
+    font-family: Mr Dafoe;
+    font-size: 30px;
+  }
+  
+  .social-media {
+    width: 35%;
+    margin: 15px;
+  }
+  
+  .social-media:hover {
+    width: 40%;
+  }
+  
+  .info-2 {
+    display: flex;
+    height: 170px;
+    margin-top: 50px;
+  }
+  
+  .linea-divisoria {
+    height: 170px;
+    margin-right: 15px;
+  }
+  
+  .info-2-footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: space-around;
+  }
+  
+  .info-horario {
+    display: flex;
+    text-decoration: none;
+    color: #2bb8cc;
+  }
+  
+  .info-horario:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .info-location {
+    display: flex;
+  }
+  
+  .creditos {
+    background-color: #99d8dd;
+  }
+  
+  .copyright {
+    font-size: 12px;
+    text-align: center;
+    padding: 30px;
+  }
+  
+  .menu {
+    background-color: rgba(26, 35, 58, 0.85);
+    width: 45%;
+    height: 100vh;
+    position: fixed;
+    top: 80px;
+    right: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 15;
+    padding-top: 30px;
+  }
+  
+  .menu-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .menu-link {
+    font-size: 16px;
+    text-decoration: none;
+    color: #99d8dd;
+    margin: 20px;
+    padding: 15px;
+  }
+  
+  .menu-link:hover {
+    text-decoration: none;
+    color: #1a233a;
+    font-weight: 700 !important;
+    background-image: url("https://s31.postimg.cc/3ok3ghl4r/seleccion-01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10px;
+  }
+  
+  .mar-bar {
+    padding: 80px 0px;
+  }
+  
+  .close {
+    height: 30px;
+    display: flex;
+    justify-items: flex-end;
+    visibility: visible;
+  }
+  
+  .cerrar-category {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .close-category {
+    height: 30px;
+  }
+  
+  .title-modal {
+    display: block;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .fish {
+    width: 25%;
+    margin-bottom: 10px;
+  }
+  
+  .primer-titulo-modal {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300 !important;
+    z-index: 10;
+    color: #1a233a;
+  }
+  
+  .seg-titulo-modal {
+    display: flex;
+    justify-content: center;
+    margin-top: -25px;
+    z-index: 1;
+    color: #1a233a;
+  }
+  
+  .food-pic {
+    padding: 190px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+    transition: 0.3s;
+    z-index: 15;
+  }
+  
+  .food-pic:hover {
+    background-size: 150%;
+  }
+  
+  .pulpo {
+    background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/26231346_610854269085316_7608938499017799777_n.png?_nc_cat=0&oh=203c7534ccb3abd8b92f1b3696cdbd5f&oe=5B5271EB");
+  }
+  
+  .pasta-cam {
+    background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/26230691_610492962454780_8901793399276937326_n.jpg?_nc_cat=0&oh=7944fdf6cb47f0994ee9947e568d7e2d&oe=5B5556CE");
+  }
+  
+  .lomo {
+    background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/26991963_616605608510182_4651733394259416200_n.jpg?_nc_cat=0&oh=a252336b5b6ec64b065e068c45a4ccd0&oe=5B898B42");
+  }
+  
+  .martierra {
+    background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t31.0-8/23800238_588490984654978_4154891992486062667_o.jpg?_nc_cat=0&oh=997097d3a6c75db73a5c901b1ce780eb&oe=5B8C4A6D");
+  }
+  
+  .camarones57 {
+    background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t31.0-8/23466991_585113098326100_3651164548122824350_o.jpg?_nc_cat=0&oh=2373ca51b86490dc6a8a1a52ec485e7d&oe=5B5624D4");
+  }
+  
+  .citrico {
+    background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/23316429_582256991945044_5424357115698947823_n.png?_nc_cat=0&oh=0f22ef605b70a288a398e89a60b988ac&oe=5B9D169C");
+  }
+  
+  .peruano {
+    background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/23795336_589725534531523_1887808070002157890_n.jpg?_nc_cat=0&oh=1819daf1e02d5d0b980809b1396b378b&oe=5B8BE3D3");
+  }
+  
+  .aguachile {
+    background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/23031638_581120005392076_7861244799101922669_n.png?_nc_cat=0&oh=7fee23cc3e9181fce580d5ae23351dd8&oe=5B850FAC");
+  }
+  
+  .polanco {
+    background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t31.0-8/23004474_579891915514885_8832869961656328523_o.jpg?_nc_cat=0&oh=dee50d901f78b3126abcb8742c1f4e27&oe=5B81CAB3");
+  }
+  
+  .tatuna {
+    background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/20953535_553720781465332_2159412349618103948_n.png?_nc_cat=0&oh=604153549606c44237ca6f56c51227fa&oe=5B8A4064");
+  }
+  
+  .quitapenas {
+    background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/24129836_590946681076075_937531213452587731_n.png?_nc_cat=0&oh=07c4c7fc8dc2e5577f6878cf1b3e55af&oe=5B82A157");
+  }
+  
+  .tortilla {
+    background-image: url("http://spicedpeachblog.com/wp-content/uploads/2015/05/SPG-9216.jpg");
+  }
+  
+  .frijol {
+    background-image: url("https://farm5.static.flickr.com/4227/34507064133_3900111376_b.jpg");
+  }
+  
+  .thai {
+    background-image: url("https://images.pexels.com/photos/209540/pexels-photo-209540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  
+  .crabsalad {
+    background-image: url("https://images.pexels.com/photos/51948/gourmet-salad-lunch-breakfast-51948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  }
+  
+  .description {
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin-top: -200px;
+    background-color: #1a233a;
+    color: #e0e8eb;
+  }
+  
+  .title-plato {
+    color: #2bb8cc;
+    margin-left: 120px;
+    z-index: 10;
+    margin-bottom: 40px;
+    margin-top: -320px;
+  }
+  
+  .plato-description {
+    margin-left: 230px;
+    margin-bottom: 40px;
+    padding-top: 90px;
+  }
+  
+  .precio {
+    margin-left: 230px;
+    padding-right: 150px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 700 !important;
+    color: #99d8dd;
+  }
+  
+  .brush-plato {
+    width: 300px;
+    margin-left: -120px;
+    margin-top: -130px;
+  }
+  
+  .ficha-comida {
+    margin-bottom: 120px;
+  }
+  
+  .fuertes {
+    background-color: #e0e8eb;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 35;
+    padding-top: 80px;
+  }
+  
+  .fuertes-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .mar {
+    background-color: #e0e8eb;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 35;
+    padding-top: 80px;
+  }
+  
+  .mar-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .sopas {
+    background-color: #e0e8eb;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 35;
+    padding-top: 80px;
+  }
+  
+  .sopas-visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  
