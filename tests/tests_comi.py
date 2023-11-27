@@ -5,7 +5,7 @@ from api.models import General
 
 
 def test_crear_instancia():
-        instancia = General.objects.create_user(
+        instancia = General.objects.create_user (
             Id_genera='A'
             precios='precio1',
             empanadas='empanada1',
@@ -16,7 +16,7 @@ def test_crear_instancia():
             alcohol='alcohol1',
             cervezas='cerveza1',
             refrescos='refresco1',
-            cafes='cafe1'
+            cafes='cafe1',
         )
 
         # Verifica cada campo individualmente 

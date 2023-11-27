@@ -14,6 +14,7 @@ from pathlib import Path
 import sys
 import os
 import environ
+import dj_database_url
 
 
 
@@ -59,6 +60,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware'
 ]
 
 ROOT_URLCONF = 'ApiJesus.urls'
@@ -86,14 +88,14 @@ WSGI_APPLICATION = 'ApiJesus.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'PibeArgentino',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
-        'HOST': 'localhost',  # O la dirección de tu servidor PostgreSQL
-        'PORT': 5432,           # Deja en blanco para el valor predeterminado (5432)
-    }
+    'default': dj_database_url.parse('postgres://pibe_argentino_user:QDKRnEyigFUN7pQ2pVE0ZYbk0G6YfVyJ@dpg-cligv7mf27hc73cruig0-a.oregon-postgres.render.com/pibe_argentino')
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': 'PibeArgentino',
+        # 'USER': 'postgres',
+        # 'PASSWORD': '12345',
+        # 'HOST': 'localhost',  # O la dirección de tu servidor PostgreSQL
+        # 'PORT': 5432,           # Deja en blanco para el valor predeterminado (5432)
+    
 }
 # DATABASES = {
 #     'default': {
@@ -138,6 +140,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
