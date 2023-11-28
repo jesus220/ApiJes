@@ -20,8 +20,8 @@ def test_crear_instancia():
         )
 
         # Verifica cada campo individualmente 
-        assert test_crear_instancia.Id_genera == 'A'
-        assert test_crear_instancia.precios == 'precio1'
+        assert instancia.Id_genera == 'A'
+        assert instancia.precios == 'precio1'
         
         
 def test_crear_instancia(self):
