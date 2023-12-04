@@ -111,7 +111,7 @@ class RegistroUsuarioView(HttpRequest):
                 [request.POST['email']],  # Lista de direcciones de correo de destinatarios
                 fail_silently=False,     # Si se establece en True, los errores en el envío de correo no generarán una excepción
                 )
-                return redirect('login.html')   
+                return redirect('index')   
         else: 
             form = registros()
         context = { 'form' : form}
