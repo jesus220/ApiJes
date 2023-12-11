@@ -180,3 +180,5 @@ if 'test' in sys.argv:
             'NAME': ':memory:',
         }
     }
+    
+GOOGLE_MAPS_API_KEY = 'AIzaSyAabz8IoM-VT7LL-1AL0be-JQ-ge6Lrdcc'

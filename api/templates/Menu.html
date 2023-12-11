@@ -5,769 +5,794 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="{% static 'Js/Menu.js' %}"></script>
   <link href="{% static 'CSS/Menu.css' %}" rel="stylesheet">
+  <link href="{% static 'CSS/startmin.css' %}" rel="stylesheet">
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAabz8IoM-VT7LL-1AL0be-JQ-ge6Lrdcc&callback=console.debug&libraries=maps,marker&v=beta"></script>
+  <script src="https://www.paypal.com/sdk/js?client-id=AeQryshhocwWEmWDQrroGre4lb6ZmvqzCQ20OXukzf461Vi5YE_drX6XgAx4cVbZzg_ALb_02Ypjdukt&amp;currency=MXN" data-uid-auto="uid_gurfqkrdjrrfkmuisejljfrdcclpzf"></script>
   <title>Pibe Argentino</title>
 </head>
 
 <body>
+ <!--HOME-->
+ <div class="home">
+  <div class="container-fluid">
+    <div class="row bar-menu">
+      <div class="col-md-4 contactos">
+        <div class="location">
+          <a class="info" href="#">
+            Pibe Argentino
+          </a>
+        </div>
+        <img class="division" src="https://s31.postimg.cc/6w1vu6ox7/division-03.png">
+        <div class="phone">
+          <a class="info" href="#"><img class="icono" src="https://s31.postimg.cc/4eq4mrkej/cel-02.png">55-22-35-73-01</a>
+        </div>
+      </div>
+      <div class="col-md-4 logo-area"> 
+      </div>
+      <div class="col-md-4">
+        <div class="opciones">
+          <i class="fas fa-search"></i>
+              <ul class="nav navbar-nav navbar-left navbar-top-links">
+                <a class="btn-design" href="{% url 'login' %}">Entrar</a>
+              </ul>
+        </div>
+      </div>
+    </div>
 
-  <!--HOME-->
-  <div class="home">
-    <div class="container-fluid">
-      <div class="row bar-menu">
-        <div class="col-md-4 contactos">
-          <div class="location">
-            
-            <a class="info" href="#">
-              Pibe Argentino
-            </a>
-          </div>
-          <img class="division" src="https://s31.postimg.cc/6w1vu6ox7/division-03.png">
-          <div class="phone">
-            <a class="info" href="#"><img class="icono" src="https://s31.postimg.cc/4eq4mrkej/cel-02.png">55-22-35-73-01</a>
-          </div>
-        </div>
-        <div class="col-md-4 logo-area"> 
-        </div>
-        <div class="col-md-4">
-          <div class="opciones">
-            <i class="fas fa-search"></i>
-                <ul class="nav navbar-nav navbar-left navbar-top-links">
-                  <a class="btn-design" href="{% url 'login' %}">Entrar</a>
-                </ul>
-          </div>
+    
+    <div class="row home-content">
+      <div class="col-md-8"></div>
+      <div class="col-md-3 texto">
+        <h6>Sabor a la</h6>
+        <h3>Parilla</h3>
+        <img class="line" src="https://s18.postimg.cc/6h1hsa9s9/brochazo-01.png">
+        <div class="btn-menu">
+          <a class="btn-design" href="#men">Ir al Menú</a>
         </div>
       </div>
-      <div class="row home-content">
-        <div class="col-md-8"></div>
-        <div class="col-md-3 texto">
-          <h6>Sabor a la</h6>
-          <h3>Parilla</h3>
-          <img class="line" src="https://s18.postimg.cc/6h1hsa9s9/brochazo-01.png">
-          <div class="btn-menu">
-            <a class="btn-design" href="#men">Ir al Menú</a>
+    </div>
+    <div class="row ola">
+      <div class="col-md-12 ola-img"> 
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--About-Container-fixed-->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 sec-about">
+      <div class="titles">
+        <h2>Acerca de</h2>
+        <h1>Nosotros</h1>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-7 img-2">
+      <img class="brochazo-2" src="https://s9.postimg.cc/zdjz9jwnz/brochazo_vertical-01.png">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-7">
+      <img class="chef" src="../static/img/como-hacer-carne-asada-perfecta.jpg">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6"></div>
+    <div class="col-md-6 info-about">
+      <div class="about-content">
+        <p>Este restaurante ofrece un buffet de diversos cortes de carne a tan solo</p>
+        <h4> 250 pesos</h4>
+        <p>donde cada corte lo puedes pedir de manera ilimitada, recordando que no se puede pedir para lllevar el buffet</p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 quote">
+      <h6>"La carne bien preparada es el poema perfecto para el paladar".</h6>
+      <p>- Anthony Bourdain</p>
+    </div>
+  </div>
+
+  <!--FoodMenu-title-->
+  <div class="row title-food" id="men">
+    <div class="col-md-12 food-title">
+      <h4>Menú</h4>
+    </div>
+  </div>
+</div>
+
+<!--FoodMenu-Container-fixed-->
+<div class="container-fluid">
+  <div class="row red-comida">
+    <div class="col-md-3 comida marbar-trigger">
+      <a class="category" href="#">
+        <img class="category-image" src="../static/img/carta.jpg">
+        <div class="category-content">
+          <div class="primer-titulo">
+          </div>
+          <div class="seg-titulo">
+            <h2>Carta</h2>
           </div>
         </div>
+        <div class="filter"></div>
+      </a>
+    </div>
+    <div class="col-md-3 comida platofuerte-trigger">
+      <a class="category" href="#">
+        <img class="category-image" src="../static/img/como-hacer-carne-asada-perfecta.jpg">
+        <div class="category-content">
+          <div class="primer-titulo">
+          </div>
+          <div class="seg-titulo">
+            <h2>Cortes</h2>
+          </div>
+        </div>
+        <div class="filter"></div>
+      </a>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-6 comida ensaladas-trigger">
+          <a class="category"  href="#">
+            <img class="category-image2" src="../static/img/empanadas.png">
+            <div class="category-content">
+              <div class="primer-titulo">
+              </div>
+              <div class="seg-titulo">
+                <h2>Empanadas</h2>
+              </div>
+            </div>
+            <div class="filter"></div>
+          </a>
+        </div>
+        <div class="col-md-6 comida">
+          <a class="category" href="#">
+            <img class="category-image2" src="../static/img/coctel.jpg">
+            <div class="category-content">
+              <div class="primer-titulo">
+              </div>
+              <div class="seg-titulo">
+                  <h2>Cocteles</h2>
+              </div>
+            </div>
+            <div class="filter"></div>
+          </a>
+        </div>
       </div>
-      <div class="row ola">
-        <div class="col-md-12 ola-img"> 
+      <div class="row">
+        <div class="col-md-6 comida">
+          <a class="category" href="#">
+            <img class="category-image2" src="../static/img/pasta.jpg">
+            <div class="category-content">
+              <div class="primer-titulo">
+              </div>
+              <div class="seg-titulo">
+                <h2>Pastas</h2>
+              </div>
+            </div>
+            <div class="filter"></div>
+          </a>
+        </div>
+        <div class="col-md-6 comida">
+          <a class="category" href="#">
+            <img class="category-image2" src="../static/img/flannapolitano.jpg">
+            <div class="category-content">
+              <div class="primer-titulo">
+              </div>
+              <div class="seg-titulo">
+                <h2>Postres</h2>
+              </div>
+            </div>
+            <div class="filter"></div>
+          </a>
         </div>
       </div>
     </div>
   </div>
+</div>
 
-  <!--About-Container-fixed-->
+<!--Grid-fixed-contactos-->
+<div id="map" style="height: 400px;">
+  <gmp-map center="19.385623, -99.075565" zoom="18" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="19.385623, -99.075565" title="My location"></gmp-advanced-marker>
+  </gmp-map>
+</div>
+{% comment %} <div id="map" style="height: 500px;"></div>
+
+<script>
+  function initMap() {
+    // Configura tu mapa aquí
+    var map = new google.maps.Map(document.getElementById('map'), {
+      center: { lat: -34.397, lng: 150.644 }, // Latitud y longitud
+      zoom: 8 // Nivel de zoom
+    });
+  }
+</script> {% endcomment %}
+
+<!--Grid-fixed-footer-->
+<div class="footer-fondo">
+  
+    <div class="row">
+      <div class="col-md-8"></div>
+      <div class="col-md-4 logo-footer">
+       
+      </div>
+    </div>
+    <div class="row info-footer-container">
+      
+      <div class="col-md-3"></div>
+      <div class="col-md-2 social-media-info">
+        <div class="media-info">
+          <div class="title-social-media">
+            Síguenos
+          </div>
+          <a class="social-media" href="https://www.instagram.com/pibe_argentino_grill/?hl=es"><img class="social-media" src="https://s31.postimg.cc/mc5zfobt7/Insta-01.png"></a>
+          <a class="social-media" href="https://www.facebook.com/pibeargentinogrill?locale=es_LA"><img class="social-media" src="https://s31.postimg.cc/e6nxhmq63/Fb-01.png"></a>
+        </div>
+      </div>
+      <div class="col-md-4 info-2">
+        <img class="linea-divisoria" src="https://s31.postimg.cc/wavjfnajv/division-01.png">
+        <div class="info-2-footer">
+          <div class="horario">
+            <a class="info-horario" href="#"><img class="icono" src="https://s31.postimg.cc/6td4w8nqj/reloj_2-01.png">
+              <div class="info-horarios">
+                <div>Domingo 11:00-21:00</div>
+                <div>Lun, Mar, Mie, Jue, Vie, Sab 13:00-22:00</div>
+              </div>
+            </a>
+          </div>
+          <a class="info" href="#"><img class="icono" src="https://s31.postimg.cc/4eq4mrkej/cel-02.png">55-22-35-73-01</a>
+          <a class="info" href="#">
+            <div class="info-location">
+              <img class="icono" >
+              <div class="info-location-footer">Avenida Javier Rojo Gómez 552
+                  Doctor Alfonso Ortiz Tirado
+                  Iztapalapa
+                  09020 Ciudad de México, CDMX
+                  México</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+</div>
+
+<!--Créditos-footer-->
+<div class="creditos">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 sec-about">
-        <div class="titles">
-          <h2>Acerca de</h2>
-          <h1>Nosotros</h1>
-        </div>
+      <div class="col-md-12 copyright">
+        Pibe Argentino
       </div>
     </div>
+  </div>
+</div>
+
+<!--Categoria1-ModalWindow-->
+<div class="mar">
+  <div class="container category-modal">
+    <!--Title-Categoria1-ModalWindow-->
     <div class="row">
       <div class="col-md-4"></div>
-      <div class="col-md-7 img-2">
-        <img class="brochazo-2" src="https://s9.postimg.cc/zdjz9jwnz/brochazo_vertical-01.png">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-7">
-        <img class="chef" src="../static/img/como-hacer-carne-asada-perfecta.jpg">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-6"></div>
-      <div class="col-md-6 info-about">
-        <div class="about-content">
-          <p>Este restaurante ofrece un buffet de diversos cortes de carne a tan solo</p>
-          <h4> 250 pesos</h4>
-          <p>donde cada corte lo puedes pedir de manera ilimitada, recordando que no se puede pedir para lllevar el buffet</p>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2"></div>
-      <div class="col-md-8 quote">
-        <h6>"La carne bien preparada es el poema perfecto para el paladar".</h6>
-        <p>- Anthony Bourdain</p>
-      </div>
-    </div>
-
-    <!--FoodMenu-title-->
-    <div class="row title-food" id="men">
-      <div class="col-md-12 food-title">
-        <h4>Menú</h4>
-      </div>
-    </div>
-  </div>
-
-  <!--FoodMenu-Container-fixed-->
-  <div class="container-fluid">
-    <div class="row red-comida">
-      <div class="col-md-3 comida marbar-trigger">
-        <a class="category" href="{% url 'Menu2' %}">
-          <img class="category-image" src="../static/img/carta.jpg">
-          <div class="category-content">
-            <div class="primer-titulo">
-            </div>
-            <div class="seg-titulo">
-              <h2>Carta</h2>
-            </div>
-          </div>
-          <div class="filter"></div>
-        </a>
-      </div>
-      <div class="col-md-3 comida platofuerte-trigger">
-        <a class="category" href="#">
-          <img class="category-image" src="../static/img/como-hacer-carne-asada-perfecta.jpg">
-          <div class="category-content">
-            <div class="primer-titulo">
-            </div>
-            <div class="seg-titulo">
-              <h2>Cortes</h2>
-            </div>
-          </div>
-          <div class="filter"></div>
-        </a>
-      </div>
-      <div class="col-md-6">
-        <div class="row">
-          <div class="col-md-6 comida ensaladas-trigger">
-            <a class="category" href="#">
-              <img class="category-image2" src="../static/img/empanadas.png">
-              <div class="category-content">
-                <div class="primer-titulo">
-                </div>
-                <div class="seg-titulo">
-                  <h2>Empanadas</h2>
-                </div>
-              </div>
-              <div class="filter"></div>
-            </a>
-          </div>
-          <div class="col-md-6 comida">
-            <a class="category" href="#">
-              <img class="category-image2" src="../static/img/refrescos.png">
-              <div class="category-content">
-                <div class="primer-titulo">
-                </div>
-                <div class="seg-titulo">
-                    <h2>Bebidas</h2>
-                </div>
-              </div>
-              <div class="filter"></div>
-            </a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 comida">
-            <a class="category" href="#">
-              <img class="category-image2" src="../static/img/pasta.jpg">
-              <div class="category-content">
-                <div class="primer-titulo">
-                </div>
-                <div class="seg-titulo">
-                  <h2>Pastas</h2>
-                </div>
-              </div>
-              <div class="filter"></div>
-            </a>
-          </div>
-          <div class="col-md-6 comida">
-            <a class="category" href="#">
-              <img class="category-image2" src="../static/img/flannapolitano.jpg">
-              <div class="category-content">
-                <div class="primer-titulo">
-                </div>
-                <div class="seg-titulo">
-                  <h2>Postres</h2>
-                </div>
-              </div>
-              <div class="filter"></div>
-            </a>
+      <div class="col-md-4 title-category-modal">
+        <div class="title-modal">
+          <img class="fish" src="../static/img/parrillaL.png">
+          <div class="primer-titulo-modal">
+            Carta
           </div>
         </div>
       </div>
+      <div class="col-md-4 cerrar-category">
+        <a class="cerrar-trigger" href="#"><img class="close-category" src="https://s31.postimg.cc/wju18aax7/x-01.png"></i></a>
+      </div>
     </div>
-  </div>
 
-  <!--Grid-fixed-contactos-->
- 
-
-  <!--Grid-fixed-footer-->
-  <div class="footer-fondo">
-    <div class="container">
+    <!--fichas-Categoria1-ModalWindow-->
+    <div class="ficha-comida">
       <div class="row">
-        <div class="col-md-8"></div>
-        <div class="col-md-4 logo-footer">
-         
+        <div class="col-md-7 food-pic citrico">
         </div>
       </div>
-      <div class="row info-footer-container">
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            3 Tipos de cortes,pollo,queso panela,chorizo,chistorra y morcilla.
+          </div>
+          <div class="precio">
+            $495.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="../static/img/cortes.jpg">
+          </div>
+        </div>
+      </div>
+      <div class="row jusutify-content-center">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Parrila Pibe</h4>
+          </div>
+        </div>
         
-        <div class="col-md-3"></div>
-        <div class="col-md-2 social-media-info">
-          <div class="media-info">
-            <div class="title-social-media">
-              Síguenos
-            </div>
-            <a class="social-media" href="#"><img class="social-media" src="https://s31.postimg.cc/mc5zfobt7/Insta-01.png"></a>
-            <a class="social-media" href="#"><img class="social-media" src="https://s31.postimg.cc/e6nxhmq63/Fb-01.png"></a>
-          </div>
-        </div>
-        <div class="col-md-4 info-2">
-          <img class="linea-divisoria" src="https://s31.postimg.cc/wavjfnajv/division-01.png">
-          <div class="info-2-footer">
-            <div class="horario">
-              <a class="info-horario" href="#"><img class="icono" src="https://s31.postimg.cc/6td4w8nqj/reloj_2-01.png">
-                <div class="info-horarios">
-                  <div>Domingo 11:00-21:00</div>
-                  <div>Lun, Mar, Mie, Jue, Vie, Sab 13:00-22:00</div>
-                </div>
-              </a>
-            </div>
-            <a class="info" href="#"><img class="icono" src="https://s31.postimg.cc/4eq4mrkej/cel-02.png">55-22-35-73-01</a>
-            <a class="info" href="#">
-              <div class="info-location">
-                <img class="icono" >
-                <div class="info-location-footer">Avenida Javier Rojo Gómez 552
-                    Doctor Alfonso Ortiz Tirado
-                    Iztapalapa
-                    09020 Ciudad de México, CDMX
-                    México</div>
-              </div>
-            </a>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
+   
+    
+    
 
-  <!--Créditos-footer-->
-  <div class="creditos">
-    <div class="container">
+    <div class="ficha-comida">
       <div class="row">
-        <div class="col-md-12 copyright">
-          Pibe Argentino
-        </div>
+        <div class="col-md-7 food-pic peruano"></div>
       </div>
-    </div>
-  </div>
-
-  <!--Menú-ModalWindow-->
-  <div class="container-fluid menu-space">
-    <div class="col-md-5">
-      <div class="menu">
-        <div class="cerrar">
-          <a class="btn-cerrar" href="#"><img class="close" src="https://s31.postimg.cc/m0aqxz1l7/x2-01.png"></i></a>
-        </div>
-        <a class="menu-link" href="#">Menú</a>
-        <a class="menu-link" href="#">Servicio al Cliente</a>
-        <a class="menu-link" href="#">Reservaciones</a>
-
-      </div>
-    </div>
-  </div>
-
-  <!--Categoria1-ModalWindow-->
-  <div class="mar">
-    <div class="container category-modal">
-      <!--Title-Categoria1-ModalWindow-->
       <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4 title-category-modal">
-          <div class="title-modal">
-            <img class="fish" src="https://s31.postimg.cc/m23zd3utn/Fish-01.png">
-            <div class="primer-titulo-modal">
-              Del Mar al
-            </div>
-            <div class="seg-titulo-modal">
-              <h3>Bar</h3>
-            </div>
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            Con salsa pomodoro, jamon y queso gratinado
           </div>
-        </div>
-        <div class="col-md-4 cerrar-category">
-          <a class="cerrar-trigger" href="#"><img class="close-category" src="https://s31.postimg.cc/wju18aax7/x-01.png"></i></a>
-        </div>
-      </div>
-      <!--fichas-Categoria1-ModalWindow-->
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic citrico">
-
+          <div class="precio">
+            $ 150.00
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              Dorado, limón Kaffir, naranja, toronja, mandarina, tomate cherry, cebolla morada.
-            </div>
-            <div class="precio">
-              Q.95.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Cítrico</h4>
-            </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="../static/img/milanesa.jpg">
           </div>
         </div>
       </div>
-
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic peruano"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              Cebiche de pescado en nuestra deliciosa salsa de cilantro, limón Kaffir, cebolla morada, chile y plataninas.
-            </div>
-            <div class="precio">
-              Q.89.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
+      <div class="row jusutify-content-center">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Milanesa napolitana de res</h4>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Cebiche Peruano</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic aguachile"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              Uno de los platillos más extravagentes; nuestros Camaranes en salsa de chile con pepino.
-            </div>
-            <div class="precio">
-              Q.100.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Camarones en Aguachile</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic polanco"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              Coctel de camarnes a la mexicana con una deliciosa salsa de aguacate como base.
-            </div>
-            <div class="precio">
-              Q.79.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Polanco</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic tatuna"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              Delicioso cebiche de camarón, salsa inglesa, tomate picado, aguacate, cebolla morada, limón y plataninas.
-            </div>
-            <div class="precio">
-              Q.89.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Cebiche Tatuna</h4>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </div>
-  </div>
 
-  <!--Categoria2-ModalWindow-->
-  <div class="fuertes">
-    <div class="container category-modal">
-      <!--Title-Categoria1-ModalWindow-->
+    <div class="ficha-comida">
       <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4 title-category-modal">
-          <div class="title-modal">
-            <img class="fish" src="https://s31.postimg.cc/m23zd3utn/Fish-01.png">
-            <div class="primer-titulo-modal">
-              Platos
-            </div>
-            <div class="seg-titulo-modal">
-              <h3>Fuertes</h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 cerrar-category">
-          <a class="cerrar2-trigger" href="#"><img class="close-category" src="https://s31.postimg.cc/wju18aax7/x-01.png"></i></a>
-        </div>
+        <div class="col-md-7 food-pic aguachile"></div>
       </div>
-      <!--fichas-Categoria1-ModalWindow-->
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic pulpo"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              a las brasas, salsa anticuchera, cebollitas moradas, arroz blanco. Bajo en Calorías.
-            </div>
-            <div class="precio">
-              Q.199.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Pulpo Negrito</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic pasta-cam">
-
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              Un delicioso platillo conformado por camarón, fusili, salsa ají amarillo y crema.
-            </div>
-            <div class="precio">
-              Q.99.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Pasta ala Huancaina</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic lomo"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              importado, encebollado, papas, ají amarillo, soya, chile pimiento, con arroz.
-            </div>
-            <div class="precio">
-              Q.139.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Lomo Salteado</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic martierra"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              6 onzas de lomito y media libra de camarones jumbo. Una delicia que no te puedes perder.
-            </div>
-            <div class="precio">
-              Q.179.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Mar y Tierra</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic camarones57"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              envueltos en camote rayado frito, salsa a base de chipotle, arroz blanco.
-            </div>
-            <div class="precio">
-              Q.179.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Camarones Distrito 57</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--Categoria3-ModalWindow-->
-  <div class="sopas">
-    <div class="container category-modal">
-      <!--Title-Categoria1-ModalWindow-->
       <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4 title-category-modal">
-          <div class="title-modal">
-            <img class="fish" src="https://s31.postimg.cc/m23zd3utn/Fish-01.png">
-            <div class="primer-titulo-modal">
-              Ensaladas y
-            </div>
-            <div class="seg-titulo-modal">
-              <h3>Sopas</h3>
-            </div>
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            Corte de carne de 500 GRS
           </div>
-        </div>
-        <div class="col-md-4 cerrar-category">
-          <a class="cerrar3-trigger" href="#"><img class="close-category" src="https://s31.postimg.cc/wju18aax7/x-01.png"></i></a>
-        </div>
-      </div>
-      <!--fichas-Categoria1-ModalWindow-->
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic quitapenas"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              a base de tomate, chipotle, calamares, camarones y mejillones que curarán cualquier goma.
-            </div>
-            <div class="precio">
-              Q.59.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
+          <div class="precio">
+            $ 315.00
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Caldo "El Quita Gomas"</h4>
-            </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="../static/img/tbone.jpg">
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>T-Bone </h4>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic tortilla"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              Deliciosa sopa hecha de salsa con tortilla tostada, crema y cebolla. Con un toque pequeño de picante.
-            </div>
-            <div class="precio">
-              Q.59.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic polanco"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            Corte de carne de 500 GRS
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Sopa de Tortilla</h4>
-            </div>
+          <div class="precio">
+            $ 360.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="../static/img/bife.png">
+          </div>
           </div>
         </div>
       </div>
-
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic frijol"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              Sopa chapina de frijol, queso, aguacate, crema, chorizo, chips de tortilla.
-            </div>
-            <div class="precio">
-              Q.59.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Sopa de Frijol</h4>
-            </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Biffe de Costilla</h4>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic thai"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              Deliciosa sopa a base de coco, curry, camarones, cebolla, y un toque de limón Kaffir.
-            </div>
-            <div class="precio">
-              Q.59.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic tatuna"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            Corte de carne de 500 GRS.
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Sopa Thai</h4>
-            </div>
+          <div class="precio">
+            $ 230.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="../static/img/vacio.jpg">
           </div>
         </div>
       </div>
-
-      <div class="ficha-comida">
-        <div class="row">
-          <div class="col-md-7 food-pic crabsalad"></div>
-        </div>
-        <div class="row">
-          <div class="col-md-5"></div>
-          <div class="col-md-5 description">
-            <div class="plato-description">
-              Deliciosa ensalada de camarón, tomate cherri, lechuga, rábano y limón Kaffir.
-            </div>
-            <div class="precio">
-              Q.69.00
-            </div>
-            <div class="brochazo-plato">
-              <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-            </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Vacio</h4>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-6">
-            <div class="title-plato">
-              <h4>Ensalada de Camarón</h4>
-            </div>
+      </div>
+    </div>
+    <div id="paypal-button-container" class="col-4" style="margin-left: 500px;">
+      <script src="{% static "Js/paypal.js" %}"></script>
+    </div>
+  </div>
+</div>
+
+<!--Categoria2-ModalWindow-->
+<div class="fuertes">
+  <div class="container category-modal">
+    <!--Title-Categoria1-ModalWindow-->
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 title-category-modal">
+        <div class="title-modal">
+          <img class="fish" src="https://s31.postimg.cc/m23zd3utn/Fish-01.png">
+          <div class="primer-titulo-modal">
+            Platos
+          </div>
+          <div class="seg-titulo-modal">
+            <h3>Fuertes</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 cerrar-category">
+        <a class="cerrar2-trigger" href="#"><img class="close-category" src="https://s31.postimg.cc/wju18aax7/x-01.png"></i></a>
+      </div>
+    </div>
+    <!--fichas-Categoria1-ModalWindow-->
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic pulpo"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            a las brasas, salsa anticuchera, cebollitas moradas, arroz blanco. Bajo en Calorías.
+          </div>
+          <div class="precio">
+            Q.199.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Pulpo Negrito</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic pasta-cam">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            Un delicioso platillo conformado por camarón, fusili, salsa ají amarillo y crema.
+          </div>
+          <div class="precio">
+            Q.99.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Pasta ala Huancaina</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic lomo"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            importado, encebollado, papas, ají amarillo, soya, chile pimiento, con arroz.
+          </div>
+          <div class="precio">
+            Q.139.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Lomo Salteado</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic martierra"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            6 onzas de lomito y media libra de camarones jumbo. Una delicia que no te puedes perder.
+          </div>
+          <div class="precio">
+            Q.179.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Mar y Tierra</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic camarones57"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            envueltos en camote rayado frito, salsa a base de chipotle, arroz blanco.
+          </div>
+          <div class="precio">
+            Q.179.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Camarones Distrito 57</h4>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
 
+<!--Categoria3-ModalWindow-->
+<div class="sopas">
+  <div class="container category-modal">
+    <!--Title-Categoria1-ModalWindow-->
+    <div class="row">
+      <div class="col-md-4"></div>
+      <div class="col-md-4 title-category-modal">
+        <div class="title-modal">
+          <img class="fish" src="https://s31.postimg.cc/m23zd3utn/Fish-01.png">
+          <div class="primer-titulo-modal">
+            Ensaladas y
+          </div>
+          <div class="seg-titulo-modal">
+            <h3>Sopas</h3>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 cerrar-category">
+        <a class="cerrar3-trigger" href="#"><img class="close-category" src="https://s31.postimg.cc/wju18aax7/x-01.png"></i></a>
+      </div>
+    </div>
+    <!--fichas-Categoria1-ModalWindow-->
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic quitapenas"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            a base de tomate, chipotle, calamares, camarones y mejillones que curarán cualquier goma.
+          </div>
+          <div class="precio">
+            Q.59.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Caldo "El Quita Gomas"</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic tortilla"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            Deliciosa sopa hecha de salsa con tortilla tostada, crema y cebolla. Con un toque pequeño de picante.
+          </div>
+          <div class="precio">
+            Q.59.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Sopa de Tortilla</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic frijol"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            Sopa chapina de frijol, queso, aguacate, crema, chorizo, chips de tortilla.
+          </div>
+          <div class="precio">
+            Q.59.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Sopa de Frijol</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic thai"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            Deliciosa sopa a base de coco, curry, camarones, cebolla, y un toque de limón Kaffir.
+          </div>
+          <div class="precio">
+            Q.59.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Sopa Thai</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ficha-comida">
+      <div class="row">
+        <div class="col-md-7 food-pic crabsalad"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            Deliciosa ensalada de camarón, tomate cherri, lechuga, rábano y limón Kaffir.
+          </div>
+          <div class="precio">
+            Q.69.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Ensalada de Camarón</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="{% static 'Js/jquery.min.js' %}"></script>
+  <script src="{% static 'Js/bootstrap.min.js' %}"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+  <script src="{% static 'Js/metisMenu.min.js' %}"></script>
+
+        <!-- DataTables JavaScript -->
+  <script src="{% static 'js/dataTables/jquery.dataTables.min.js' %}"></script>
+  <script src="{% static 'js/dataTables/dataTables.bootstrap.min.js' %}"></script>
+
+         <!-- Custom Theme JavaScript -->
+  <script src="{% static 'Js/startmin.js' %}"></script>
+
+  <script src="{% static 'Js/Menu.js' %}"></script>
+
+
+
+  
 </body>
 
 </html>

@@ -16,6 +16,7 @@ from .models import General
 from django.db.models import Count
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.conf import settings
 # from django.conf import settings
 # from api.models import Product
 
@@ -111,7 +112,7 @@ class RegistroUsuarioView(HttpRequest):
                 [request.POST['email']],  # Lista de direcciones de correo de destinatarios
                 fail_silently=False,     # Si se establece en True, los errores en el envío de correo no generarán una excepción
                 )
-                return redirect('index')   
+                return redirect('login')   
         else: 
             form = registros()
         context = { 'form' : form}
@@ -247,58 +248,7 @@ def chart_view(request):
     }
     )
     
-# def process_payment(request):
-#     # Configurar las credenciales de PayPal
-#     paypal_mode = settings.PAYPAL_MODE
-#     paypal_client_id = settings.PAYPAL_CLIENT_ID
-#     paypal_secret = settings.PAYPAL_SECRET
 
-#     # Configurar las credenciales de PayPal
-#     Payment.client_id = paypal_client_id
-#     Payment.client_secret = paypal_secret
-
-#     # Crear el pago
-#     payment = Payment({
-#         "intent": "sale",
-#         "payer": {
-#             "payment_method": "paypal",
-#         },
-#         "redirect_urls": {
-#             "return_url": request.build_absolute_uri(reverse('payment_success')),
-#             "cancel_url": request.build_absolute_uri(reverse('payment_cancel')),
-#         },
-#         "transactions": [{
-#             "item_list": {
-#                 "items": [{
-#                     "name": "Producto de ejemplo",
-#                     "sku": "123",
-#                     "price": "10.00",
-#                     "currency": "USD",
-#                     "quantity": 1,
-#                 }],
-#             },
-#             "amount": {
-#                 "total": "10.00",
-#                 "currency": "USD",
-#             },
-#             "description": "Descripción del pago de ejemplo",
-#         }],
-#     })
-
-#     if payment.create():
-#         # Redireccionar al usuario a la URL de aprobación de PayPal
-#         for link in payment.links:
-#             if link.method == "REDIRECT" and link.rel == "approval_url":
-#                 return render(request, 'payment/redirect.html', {'redirect_url': link.href})
-#     else:
-#         return HttpResponse('Error al crear el pago en PayPal')
-    
-    
-# def payment_success(request):
-#     return render(request, 'payment/success.html')
-
-# def payment_cancel(request):
-#     return render(request, 'payment/cancel.html')
 
 #def salir(request):
 #    logout(request)

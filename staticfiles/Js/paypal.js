@@ -1,22 +1,22 @@
 paypal.Buttons({
     style: {
-      color: '',
-      shape: '',
-      label: ''
+      color: 'blue',
+      shape: 'pill',
+      label: 'pay'
     },
     
     createOrder: function(data, actions){
       return actions.order.create({
         purchase_units: [{
           amount:{
-            value: 350
+            value: 495
           }
         }]
       });
     },
     onApprove: function (data, actions){
       actions.order.capture().then(function (detalles){
-        window.location.href=""
+        window.location.href= "completo.html"
       });
     },
     onCancel: function(data){

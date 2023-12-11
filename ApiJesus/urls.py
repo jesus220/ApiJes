@@ -29,7 +29,6 @@ from django.urls import path
 
 
 urlpatterns = [
-    #path('',LoginView.as_view(template_name="login.html"), name= 'login'),
     path('', Home.as_view(), name='home'),
     path('index.html', index.as_view(), name='index'),
     path('tables.html', tables.as_view(), name='tables'),
@@ -39,6 +38,5 @@ urlpatterns = [
     path('register/', RegistroUsuarioView.register, name= 'register'),
     path('login/', LoginView.as_view(template_name="login.html"), name= 'login'),
     path('chart/', views.chart_view, name='chart_view'),
-
- 
+    
 ]

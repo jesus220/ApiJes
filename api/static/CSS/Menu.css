@@ -2,6 +2,22 @@
     box-sizing: border-box;
   }
   
+  .map-container {
+    width: 60px; /* ajusta el ancho según tus necesidades */
+    height: 90px; /* ajusta la altura según tus necesidades */
+    margin: 20px auto; /* para centrar el contenedor en la página */
+    border: 1px solid #ccc; /* borde para resaltar el área del mapa */
+  }
+
+/* Ajuste opcional para centrar el mapa en el contenedor */
+  #gmp-map {
+    width: 100%;
+    height: 100%;
+  }
+  #map{
+    height: 400px;
+  }
+
   body {
     font-family: "Quicksand", sans-serif !important;
   }
@@ -20,6 +36,7 @@
   h3 {
     font-family: "Mr Dafoe", cursive !important;
     font-size: 65px !important;
+    
   }
   
   h4 {
@@ -229,7 +246,7 @@
     height: 100%;
     background-repeat: no-repeat;
   }
-  
+ 
   .titles {
     padding-bottom: 100px;
   }
@@ -750,4 +767,5 @@
     opacity: 1;
     visibility: visible;
   }
+
   

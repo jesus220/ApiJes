@@ -1,96 +1,66 @@
+{% extends "Menu.html" %}
 {% load static%}
-<!DOCTYPE html>
-<head>
-  <meta charset="utf-8">
-  <link href="{% static 'CSS/Menu2.css' %}" rel="stylesheet">
-  <script src="https://www.paypal.com/sdk/js?client-id=AeQryshhocwWEmWDQrroGre4lb6ZmvqzCQ20OXukzf461Vi5YE_drX6XgAx4cVbZzg_ALb_02Ypjdukt&currency=MXN"></script>
-    <style>
-        /* Agrega el enlace a la hoja de estilo de PayPal */
-        @import url('https://www.paypalobjects.com/api/button.css');
-
-        /* Establece el tamaño del contenedor del botón */
-        #paypal-button-container {
-            max-width: 300px; /* Puedes ajustar el ancho según tus necesidades */
-            margin: 0 auto; /* Centra el contenedor horizontalmente */
-        }
-
-        /* Estilos personalizados para el botón de PayPal */
-        .paypal-button {
-            max-width: 50%; /* Hace que el botón ocupe todo el ancho del contenedor */
-            width: 50%;
-        }
-    </style>
-  <title>Pibe Argentino</title>
-</head>
-<div class="main">
-    <div class="nav">
-        <a class="btn-design" href="{% url 'Menu' %}">Regresar</a>
-    </div>
-    <div class="list">
-      <div class="dish animated fadeInRight">
-        <div class="infos">
-          <h1>Parrillada Argentina</h1>
-          <div class="rate star4">
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-          </div><span class="price">$350</span>
+{%block menu1%}
+<!-- Modal para la comida del mar -->
+<div class="mar" >
+  <div class="container category-modal">
+    <!-- Encabezado del modal -->
+    <div class="row">
+      <!-- Título -->
+      <div class="col-md-4"></div>
+      <div class="col-md-4 title-category-modal">
+        <div class="title-modal">
+          <img class="fish" src="https://s31.postimg.cc/m23zd3utn/Fish-01.png">
+          <div class="primer-titulo-modal">
+            Del Mar al
+          </div>
+          <div class="seg-titulo-modal">
+            <h3>Bar</h3>
+          </div>
         </div>
-        <div class="bg"><img src="../static/img/parrilla.png"/></div>
-        <div class="black"></div>
-        
       </div>
-      <div class="dish animated fadeInRight">
-        <div class="infos">
-          
-          <div class="rate star5">
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-          
-          
-        
-          <div class="rate star5">
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-            <div class="fa fa-star"> </div>
-            <div id="paypal-button-container"></div>
-            <script>
-              paypal.Buttons({
-                style: {
-                  color: '',
-                  shape: '',
-                  label: ''
-                },
-                
-                createOrder: function(data, actions){
-                  return actions.order.create({
-                    purchase_units: [{
-                      amount:{
-                        value: 350
-                      }
-                    }]
-                  });
-                },
-                onApprove: function (data, actions){
-                  actions.order.capture().then(function (detalles){
-                    window.location.href=""
-                  });
-                },
-                onCancel: function(data){
-                  alert("El pago ha sido cancelado")
-                }
-              }).render('#paypal-button-container');
-          </script>
-          <div class="date"></div>
-        </div>
-        <div class="black"></div>
+      <!-- Botón para cerrar -->
+      <div class="col-md-4 cerrar-category">
+        <a class="cerrar-trigger" href="#"><img class="close-category" src="https://s31.postimg.cc/wju18aax7/x-01.png"></a>
       </div>
     </div>
+
+    <!-- Fichas de comida -->
+    <!-- Repite esta estructura para cada plato -->
+    <div class="ficha-comida">
+      <div class="row">
+        <!-- Imagen del plato -->
+        <div class="col-md-7 food-pic citrico"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-5"></div>
+        <!-- Descripción y precio -->
+        <div class="col-md-5 description">
+          <div class="plato-description">
+            Dorado, limón Kaffir, naranja, toronja, mandarina, tomate cherry, cebolla morada.
+          </div>
+          <div class="precio">
+            Q.95.00
+          </div>
+          <div class="brochazo-plato">
+            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6"></div>
+        <!-- Título del plato -->
+        <div class="col-md-6">
+          <div class="title-plato">
+            <h4>Cítrico</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin de ficha de comida -->
+
+    <!-- Agrega más fichas de comida aquí -->
+
   </div>
+</div>
+{%endblock%}
