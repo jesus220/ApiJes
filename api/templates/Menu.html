@@ -202,17 +202,7 @@
       <gmp-advanced-marker position="19.385623, -99.075565" title="My location"></gmp-advanced-marker>
   </gmp-map>
 </div>
-{% comment %} <div id="map" style="height: 500px;"></div>
 
-<script>
-  function initMap() {
-    // Configura tu mapa aquí
-    var map = new google.maps.Map(document.getElementById('map'), {
-      center: { lat: -34.397, lng: 150.644 }, // Latitud y longitud
-      zoom: 8 // Nivel de zoom
-    });
-  }
-</script> {% endcomment %}
 
 <!--Grid-fixed-footer-->
 <div class="footer-fondo">
@@ -284,7 +274,10 @@
         <div class="title-modal">
           <img class="fish" src="../static/img/parrillaL.png">
           <div class="primer-titulo-modal">
-            Carta
+            Comida a la 
+          </div>
+          <div class="seg-titulo-modal">
+            <h3>Carta</h3>
           </div>
         </div>
       </div>
@@ -308,19 +301,24 @@
           <div class="precio">
             $495.00
           </div>
-          <div class="brochazo-plato">
-            <img class="brush-plato" src="../static/img/cortes.jpg">
+          <div class="brochazo-plato" >
+            <img class="brush-plato" src="../static/img/cortes.jpg" >
           </div>
         </div>
       </div>
       <div class="row jusutify-content-center">
         <div class="col-md-6"></div>
         <div class="col-md-6">
-          <div class="title-plato">
+          <div class="title-plato" style="margin-top: -350px">
             <h4>Parrila Pibe</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 200px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="QRF7H2FYFFPCA" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+          </form>
         </div>
-        
       </div>
     </div>
    
@@ -338,7 +336,7 @@
             Con salsa pomodoro, jamon y queso gratinado
           </div>
           <div class="precio">
-            $ 150.00
+            $150.00
           </div>
           <div class="brochazo-plato">
             <img class="brush-plato" src="../static/img/milanesa.jpg">
@@ -348,11 +346,16 @@
       <div class="row jusutify-content-center">
         <div class="col-md-6"></div>
         <div class="col-md-6">
-          <div class="title-plato">
+          <div class="title-plato" style="margin-top: -350px">
             <h4>Milanesa napolitana de res</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="5V7RZGVHMFXB6" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+          </form>
         </div>
-        
       </div>
     </div>
 
@@ -367,7 +370,7 @@
             Corte de carne de 500 GRS
           </div>
           <div class="precio">
-            $ 315.00
+            $315.00
           </div>
           <div class="brochazo-plato">
             <img class="brush-plato" src="../static/img/tbone.jpg">
@@ -377,9 +380,15 @@
       <div class="row">
         <div class="col-md-6"></div>
         <div class="col-md-6">
-          <div class="title-plato">
+          <div class="title-plato" style="margin-top: -350px">
             <h4>T-Bone </h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 200px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="C58D69TAWXH7C" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+          </form>
         </div>
       </div>
     </div>
@@ -392,13 +401,13 @@
         <div class="col-md-5"></div>
         <div class="col-md-5 description">
           <div class="plato-description">
-            Corte de carne de 500 GRS
+            Delicioso salmon en una rica salsa de maracuya
           </div>
           <div class="precio">
-            $ 360.00
+            $310.00
           </div>
           <div class="brochazo-plato">
-            <img class="brush-plato" src="../static/img/bife.png">
+            <img class="brush-plato" src="../static/img/salmon.jpg">
           </div>
           </div>
         </div>
@@ -406,16 +415,24 @@
       <div class="row">
         <div class="col-md-6"></div>
         <div class="col-md-6">
-          <div class="title-plato">
-            <h4>Biffe de Costilla</h4>
+          <div class="title-plato" style="margin-top: -500px">
+            <h4>Salmón en salsa de maracuyá</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 200px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="BT2SKWSF3E94W" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+          </form>
         </div>
       </div>
     </div>
+  
 
+    
     <div class="ficha-comida">
       <div class="row">
-        <div class="col-md-7 food-pic tatuna"></div>
+        <div class="col-md-7 food-pic camarones57"></div>
       </div>
       <div class="row">
         <div class="col-md-5"></div>
@@ -424,7 +441,7 @@
             Corte de carne de 500 GRS.
           </div>
           <div class="precio">
-            $ 230.00
+            $230.00
           </div>
           <div class="brochazo-plato">
             <img class="brush-plato" src="../static/img/vacio.jpg">
@@ -434,14 +451,17 @@
       <div class="row">
         <div class="col-md-6"></div>
         <div class="col-md-6">
-          <div class="title-plato">
+          <div class="title-plato" style="margin-top: -300px">
             <h4>Vacio</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+          <input type="hidden" name="cmd" value="_s-xclick" />
+          <input type="hidden" name="hosted_button_id" value="BPQBWZCMD746J" />
+          <input type="hidden" name="currency_code" value="USD" />
+          <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+          </form>
         </div>
       </div>
-    </div>
-    <div id="paypal-button-container" class="col-4" style="margin-left: 500px;">
-      <script src="{% static "Js/paypal.js" %}"></script>
     </div>
   </div>
 </div>
@@ -454,12 +474,12 @@
       <div class="col-md-4"></div>
       <div class="col-md-4 title-category-modal">
         <div class="title-modal">
-          <img class="fish" src="https://s31.postimg.cc/m23zd3utn/Fish-01.png">
+          <img class="fish" src="../static/img/parrillaL.png">
           <div class="primer-titulo-modal">
-            Platos
+            Cortes de 
           </div>
           <div class="seg-titulo-modal">
-            <h3>Fuertes</h3>
+            <h3>Carne</h3>
           </div>
         </div>
       </div>
@@ -476,13 +496,13 @@
         <div class="col-md-5"></div>
         <div class="col-md-5 description">
           <div class="plato-description">
-            a las brasas, salsa anticuchera, cebollitas moradas, arroz blanco. Bajo en Calorías.
+            Una jugoza arrachera de 400g.
           </div>
           <div class="precio">
-            Q.199.00
+            $300.00
           </div>
           <div class="brochazo-plato">
-            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+            <img class="brush-plato" src="../static/img/Arrachera3.jpg">
           </div>
         </div>
       </div>
@@ -490,8 +510,14 @@
         <div class="col-md-6"></div>
         <div class="col-md-6">
           <div class="title-plato">
-            <h4>Pulpo Negrito</h4>
+            <h4>Arrachera</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="8PFVR9HFN3WVN" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+          </form>
         </div>
       </div>
     </div>
@@ -506,13 +532,13 @@
         <div class="col-md-5"></div>
         <div class="col-md-5 description">
           <div class="plato-description">
-            Un delicioso platillo conformado por camarón, fusili, salsa ají amarillo y crema.
+            Un delicioso corte de biffe de chorizo de 400g.
           </div>
           <div class="precio">
-            Q.99.00
+            $390.00
           </div>
           <div class="brochazo-plato">
-            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+            <img class="brush-plato" src="../static/img/biffe.jpg">
           </div>
         </div>
       </div>
@@ -520,8 +546,14 @@
         <div class="col-md-6"></div>
         <div class="col-md-6">
           <div class="title-plato">
-            <h4>Pasta ala Huancaina</h4>
+            <h4>Biffe de chorizo</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="88VAUVR7XCM7E" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+          </form>
         </div>
       </div>
     </div>
@@ -534,13 +566,13 @@
         <div class="col-md-5"></div>
         <div class="col-md-5 description">
           <div class="plato-description">
-            importado, encebollado, papas, ají amarillo, soya, chile pimiento, con arroz.
+            Un delicioso Biffe de costilla de 500g.
           </div>
           <div class="precio">
-            Q.139.00
+            $540.00
           </div>
           <div class="brochazo-plato">
-            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+            <img class="brush-plato" src="../static/img/biffeCostilla.jpg">
           </div>
         </div>
       </div>
@@ -548,8 +580,14 @@
         <div class="col-md-6"></div>
         <div class="col-md-6">
           <div class="title-plato">
-            <h4>Lomo Salteado</h4>
+            <h4>Biffe de Costilla</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="Q45WGFE2TZRR2" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+          </form>
         </div>
       </div>
     </div>
@@ -562,13 +600,13 @@
         <div class="col-md-5"></div>
         <div class="col-md-5 description">
           <div class="plato-description">
-            6 onzas de lomito y media libra de camarones jumbo. Una delicia que no te puedes perder.
+            500g de un delicioso asado de tira.
           </div>
           <div class="precio">
-            Q.179.00
+            $425.00
           </div>
           <div class="brochazo-plato">
-            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+            <img class="brush-plato" src="../static/img/asado.jpg">
           </div>
         </div>
       </div>
@@ -576,8 +614,14 @@
         <div class="col-md-6"></div>
         <div class="col-md-6">
           <div class="title-plato">
-            <h4>Mar y Tierra</h4>
+            <h4>Asado de tira</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="C34TDGBH3MTWQ" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+          </form>
         </div>
       </div>
     </div>
@@ -590,13 +634,13 @@
         <div class="col-md-5"></div>
         <div class="col-md-5 description">
           <div class="plato-description">
-            envueltos en camote rayado frito, salsa a base de chipotle, arroz blanco.
+            Delicioso churrasco de 400g.
           </div>
           <div class="precio">
-            Q.179.00
+            $325.00
           </div>
           <div class="brochazo-plato">
-            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+            <img class="brush-plato" src="../static/img/churrasco.jpg">
           </div>
         </div>
       </div>
@@ -604,8 +648,14 @@
         <div class="col-md-6"></div>
         <div class="col-md-6">
           <div class="title-plato">
-            <h4>Camarones Distrito 57</h4>
+            <h4>Churrasco</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="V43G8BSVHT6Y2" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now" />
+          </form>
         </div>
       </div>
     </div>
