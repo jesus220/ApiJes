@@ -23,16 +23,12 @@ from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import path
 
 
-
-
-
-
-
 urlpatterns = [
     path('', Home.as_view(), name='home'),
     path('index.html', index.as_view(), name='index'),
     path('tables.html', tables.as_view(), name='tables'),
     path('Menu2.html', Menu2.as_view(), name='Menu2'),
+    path('Men.html', Men.as_view(), name='Men'),
     path('Menu.html', Menu.as_view(), name='Menu'),
     path('forgot-password.html', forgot.as_view(), name='forgot'),
     path('register/', RegistroUsuarioView.register, name= 'register'),

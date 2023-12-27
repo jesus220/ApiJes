@@ -25,7 +25,7 @@ from django.conf import settings
 
 
 class Home (APIView):
-    template_name="Menu.html"
+    template_name="Men.html"
     def get(self, request):
         return render(request,self.template_name)
     
@@ -44,6 +44,10 @@ class Menu (APIView):
     def get(self, request):
         return render(request,self.template_name)
     
+class Men (APIView):
+    template_name="Men.html"
+    def get(self, request):
+        return render(request,self.template_name)
 class succes (APIView):
     template_name="success.html"
     def get(self, request):

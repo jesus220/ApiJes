@@ -7,7 +7,6 @@ $(".close").click(function () {
 });
 
 $(".platofuerte-trigger").click(function () {
-  console.log("Hola si soy")
   $(".fuertes").toggleClass("fuertes-visible");
 });
 
@@ -30,3 +29,4 @@ $(".ensaladas-trigger").click(function () {
 $(".cerrar3-trigger").click(function () {
   $(".sopas").toggleClass("sopas-visible");
 });
+

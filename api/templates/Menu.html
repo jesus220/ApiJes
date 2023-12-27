@@ -109,8 +109,8 @@
 <!--FoodMenu-Container-fixed-->
 <div class="container-fluid">
   <div class="row red-comida">
-    <div class="col-md-3 comida marbar-trigger">
-      <a class="category" href="#">
+    <div class="col-md-3 comida ">
+      <a class="category" href="{% url 'Menu2' %}">
         <img class="category-image" src="../static/img/carta.jpg">
         <div class="category-content">
           <div class="primer-titulo">
@@ -150,7 +150,7 @@
             <div class="filter"></div>
           </a>
         </div>
-        <div class="col-md-6 comida">
+        <div class="col-md-6 comida ">
           <a class="category" href="#">
             <img class="category-image2" src="../static/img/coctel.jpg">
             <div class="category-content">
@@ -165,7 +165,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6 comida">
+        <div class="col-md-6 comida coctel-trigger">
           <a class="category" href="#">
             <img class="category-image2" src="../static/img/pasta.jpg">
             <div class="category-content">
@@ -338,8 +338,8 @@
           <div class="precio">
             $150.00
           </div>
-          <div class="brochazo-plato">
-            <img class="brush-plato" src="../static/img/milanesa.jpg">
+          <div class="brochazo-plato" >
+            <img class="brush-plato" src="../static/img/milanesa.jpg" >
           </div>
         </div>
       </div>
@@ -670,12 +670,12 @@
       <div class="col-md-4"></div>
       <div class="col-md-4 title-category-modal">
         <div class="title-modal">
-          <img class="fish" src="https://s31.postimg.cc/m23zd3utn/Fish-01.png">
+          <img class="fish" src="../static/img/parrillaL.png">
           <div class="primer-titulo-modal">
-            Ensaladas y
+            Ricas
           </div>
           <div class="seg-titulo-modal">
-            <h3>Sopas</h3>
+            <h3>Empanadas</h3>
           </div>
         </div>
       </div>
@@ -683,6 +683,7 @@
         <a class="cerrar3-trigger" href="#"><img class="close-category" src="https://s31.postimg.cc/wju18aax7/x-01.png"></i></a>
       </div>
     </div>
+
     <!--fichas-Categoria1-ModalWindow-->
     <div class="ficha-comida">
       <div class="row">
@@ -692,13 +693,13 @@
         <div class="col-md-5"></div>
         <div class="col-md-5 description">
           <div class="plato-description">
-            a base de tomate, chipotle, calamares, camarones y mejillones que curarán cualquier goma.
+            Rica empanada rellena de Carne.
           </div>
           <div class="precio">
-            Q.59.00
+            $40.00
           </div>
           <div class="brochazo-plato">
-            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+            <img class="brush-plato" src="../static/img/empanada-carne.jpg">
           </div>
         </div>
       </div>
@@ -706,83 +707,101 @@
         <div class="col-md-6"></div>
         <div class="col-md-6">
           <div class="title-plato">
-            <h4>Caldo "El Quita Gomas"</h4>
+            <h4>Carne</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="9QT2KRVEP9VDS" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+          </form>
         </div>
       </div>
     </div>
 
     <div class="ficha-comida">
       <div class="row">
-        <div class="col-md-7 food-pic tortilla"></div>
+        <div class="col-md-7 food-pic "></div>
       </div>
       <div class="row">
         <div class="col-md-5"></div>
         <div class="col-md-5 description">
           <div class="plato-description">
-            Deliciosa sopa hecha de salsa con tortilla tostada, crema y cebolla. Con un toque pequeño de picante.
+            Rica empanada de elote con queso.
           </div>
           <div class="precio">
-            Q.59.00
+            $40.00
           </div>
           <div class="brochazo-plato">
-            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+            <img class="brush-plato" src="../static/img/humita.jpg">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6"></div>
         <div class="col-md-6">
-          <div class="title-plato">
-            <h4>Sopa de Tortilla</h4>
+          <div class="title-plato" style="margin-top: -300px">
+            <h4>Humita</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="9QT2KRVEP9VDS" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+          </form>
         </div>
       </div>
     </div>
 
     <div class="ficha-comida">
       <div class="row">
-        <div class="col-md-7 food-pic frijol"></div>
+        <div class="col-md-7 food-pic"></div>
       </div>
       <div class="row">
         <div class="col-md-5"></div>
         <div class="col-md-5 description">
           <div class="plato-description">
-            Sopa chapina de frijol, queso, aguacate, crema, chorizo, chips de tortilla.
+            Rica empanada de espinaca con queso.
           </div>
           <div class="precio">
-            Q.59.00
+            $40.00
           </div>
           <div class="brochazo-plato">
-            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+            <img class="brush-plato" src="../static/img/espinaca.jpg">
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-6"></div>
         <div class="col-md-6">
-          <div class="title-plato">
-            <h4>Sopa de Frijol</h4>
+          <div class="title-plato" style="margin-top: -350px">
+            <h4>Espinaca</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="9QT2KRVEP9VDS" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+          </form>
         </div>
       </div>
     </div>
 
     <div class="ficha-comida">
       <div class="row">
-        <div class="col-md-7 food-pic thai"></div>
+        <div class="col-md-7 food-pic "></div>
       </div>
       <div class="row">
         <div class="col-md-5"></div>
         <div class="col-md-5 description">
           <div class="plato-description">
-            Deliciosa sopa a base de coco, curry, camarones, cebolla, y un toque de limón Kaffir.
+            Deliciosa empanada de chistorra con queso.
           </div>
           <div class="precio">
-            Q.59.00
+            $40.00
           </div>
           <div class="brochazo-plato">
-            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+            <img class="brush-plato" src="../static/img/chistorra.jpg">
           </div>
         </div>
       </div>
@@ -790,27 +809,33 @@
         <div class="col-md-6"></div>
         <div class="col-md-6">
           <div class="title-plato">
-            <h4>Sopa Thai</h4>
+            <h4>Chistorra</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="9QT2KRVEP9VDS" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+          </form>
         </div>
       </div>
     </div>
 
     <div class="ficha-comida">
       <div class="row">
-        <div class="col-md-7 food-pic crabsalad"></div>
+        <div class="col-md-7 food-pic "></div>
       </div>
       <div class="row">
         <div class="col-md-5"></div>
         <div class="col-md-5 description">
           <div class="plato-description">
-            Deliciosa ensalada de camarón, tomate cherri, lechuga, rábano y limón Kaffir.
+            Deliciosa empanada rellena de jamon y queso.
           </div>
           <div class="precio">
-            Q.69.00
+            $40.00
           </div>
           <div class="brochazo-plato">
-            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
+            <img class="brush-plato" src="../static/img/pibe.jpg">
           </div>
         </div>
       </div>
@@ -818,13 +843,24 @@
         <div class="col-md-6"></div>
         <div class="col-md-6">
           <div class="title-plato">
-            <h4>Ensalada de Camarón</h4>
+            <h4>Pibe</h4>
           </div>
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" style="margin-left: 150px; margin-top: 180px;">
+            <input type="hidden" name="cmd" value="_s-xclick" />
+            <input type="hidden" name="hosted_button_id" value="9QT2KRVEP9VDS" />
+            <input type="hidden" name="currency_code" value="MXN" />
+            <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+          </form>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
   <script src="{% static 'Js/jquery.min.js' %}"></script>
   <script src="{% static 'Js/bootstrap.min.js' %}"></script>
 

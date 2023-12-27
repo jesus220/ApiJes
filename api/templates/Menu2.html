@@ -1,66 +1,77 @@
-{% extends "Menu.html" %}
 {% load static%}
-{%block menu1%}
-<!-- Modal para la comida del mar -->
-<div class="mar" >
-  <div class="container category-modal">
-    <!-- Encabezado del modal -->
-    <div class="row">
-      <!-- Título -->
-      <div class="col-md-4"></div>
-      <div class="col-md-4 title-category-modal">
-        <div class="title-modal">
-          <img class="fish" src="https://s31.postimg.cc/m23zd3utn/Fish-01.png">
-          <div class="primer-titulo-modal">
-            Del Mar al
-          </div>
-          <div class="seg-titulo-modal">
-            <h3>Bar</h3>
-          </div>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="{% static 'CSS/Menu2.css' %}" rel="stylesheet">
+  <title>Pibe Argentino</title>
+</head>
+<div class="main">
+    <div class="nav">
+      <h1>Rate a Dish</h1>
+    </div>
+    <div class="list">
+      <div class="dish animated fadeInRight">
+        <div class="infos">
+          <h1>Parrilla Pibe</h1>
+          <div class="rate star4">
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+          </div><span class="price">$495.00</span>
+          <div class="date"> 3 Tipos de cortes,pollo,queso panela,chorizo,chistorra y morcilla.</div>
         </div>
+        <div class="bg"><img src="../static/img/cortes.jpg"></div>
+        <div class="black"></div>
       </div>
-      <!-- Botón para cerrar -->
-      <div class="col-md-4 cerrar-category">
-        <a class="cerrar-trigger" href="#"><img class="close-category" src="https://s31.postimg.cc/wju18aax7/x-01.png"></a>
+      <div class="dish animated fadeInRight">
+        <div class="infos">
+          <h1>Milanesa napolitana</h1>
+          <div class="rate star5">
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+          </div><span class="price">$150.00</span>
+          <div class="date">Con salsa pomodoro, jamon y queso gratinado</div>
+        </div>
+        <div class="bg"><img src="../static/img/milanesa.jpg"/></div>
+        <div class="black"></div>
+      </div>
+      <div class="dish animated fadeInRight">
+        <div class="infos">
+          <h1>T-Bone</h1>
+          <div class="rate star5">
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+          </div><span class="price">$315.00</span>
+          <div class="date">Corte de carne de 500 GRS</div>
+        </div>
+        <div class="bg"><img src="../static/img/tbone.jpg"/></div>
+        <div class="black"></div>
+      </div>
+      <div class="dish animated fadeInRight">
+        <div class="infos">
+          <h1>Salmón en salsa de maracuyá</h1>
+          <div class="rate star5">
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+            <div class="fa fa-star"> </div>
+          </div><span class="price">$310.00</span>
+          <div class="date">Delicioso salmon en una rica salsa de maracuya</div>
+        </div>
+        <div class="bg"><img src="../static/img/salmon.jpg"/></div>
+        <div class="black"></div>
       </div>
     </div>
-
-    <!-- Fichas de comida -->
-    <!-- Repite esta estructura para cada plato -->
-    <div class="ficha-comida">
-      <div class="row">
-        <!-- Imagen del plato -->
-        <div class="col-md-7 food-pic citrico"></div>
-      </div>
-      <div class="row">
-        <div class="col-md-5"></div>
-        <!-- Descripción y precio -->
-        <div class="col-md-5 description">
-          <div class="plato-description">
-            Dorado, limón Kaffir, naranja, toronja, mandarina, tomate cherry, cebolla morada.
-          </div>
-          <div class="precio">
-            Q.95.00
-          </div>
-          <div class="brochazo-plato">
-            <img class="brush-plato" src="https://s31.postimg.cc/bbky4oe57/brochazo-plato-01.png">
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-6"></div>
-        <!-- Título del plato -->
-        <div class="col-md-6">
-          <div class="title-plato">
-            <h4>Cítrico</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Fin de ficha de comida -->
-
-    <!-- Agrega más fichas de comida aquí -->
-
   </div>
-</div>
-{%endblock%}

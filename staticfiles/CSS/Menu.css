@@ -419,8 +419,6 @@ h6 {
   padding-top: 100px;
 }
 
-.footer-info {
-}
 
 .info-footer-container {
   background-color: #1a233a;
@@ -617,66 +615,6 @@ h6 {
 
 .food-pic:hover {
   background-size: 150%;
-}
-
-.pulpo {
-  background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/26231346_610854269085316_7608938499017799777_n.png?_nc_cat=0&oh=203c7534ccb3abd8b92f1b3696cdbd5f&oe=5B5271EB");
-}
-
-.pasta-cam {
-  background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/26230691_610492962454780_8901793399276937326_n.jpg?_nc_cat=0&oh=7944fdf6cb47f0994ee9947e568d7e2d&oe=5B5556CE");
-}
-
-.lomo {
-  background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/26991963_616605608510182_4651733394259416200_n.jpg?_nc_cat=0&oh=a252336b5b6ec64b065e068c45a4ccd0&oe=5B898B42");
-}
-
-.martierra {
-  background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t31.0-8/23800238_588490984654978_4154891992486062667_o.jpg?_nc_cat=0&oh=997097d3a6c75db73a5c901b1ce780eb&oe=5B8C4A6D");
-}
-
-.camarones57 {
-  background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t31.0-8/23466991_585113098326100_3651164548122824350_o.jpg?_nc_cat=0&oh=2373ca51b86490dc6a8a1a52ec485e7d&oe=5B5624D4");
-}
-
-.citrico {
-  background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/23316429_582256991945044_5424357115698947823_n.png?_nc_cat=0&oh=0f22ef605b70a288a398e89a60b988ac&oe=5B9D169C");
-}
-
-.peruano {
-  background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/23795336_589725534531523_1887808070002157890_n.jpg?_nc_cat=0&oh=1819daf1e02d5d0b980809b1396b378b&oe=5B8BE3D3");
-}
-
-.aguachile {
-  background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/23031638_581120005392076_7861244799101922669_n.png?_nc_cat=0&oh=7fee23cc3e9181fce580d5ae23351dd8&oe=5B850FAC");
-}
-
-.polanco {
-  background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t31.0-8/23004474_579891915514885_8832869961656328523_o.jpg?_nc_cat=0&oh=dee50d901f78b3126abcb8742c1f4e27&oe=5B81CAB3");
-}
-
-.tatuna {
-  background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/20953535_553720781465332_2159412349618103948_n.png?_nc_cat=0&oh=604153549606c44237ca6f56c51227fa&oe=5B8A4064");
-}
-
-.quitapenas {
-  background-image: url("https://scontent.fgua3-1.fna.fbcdn.net/v/t1.0-9/24129836_590946681076075_937531213452587731_n.png?_nc_cat=0&oh=07c4c7fc8dc2e5577f6878cf1b3e55af&oe=5B82A157");
-}
-
-.tortilla {
-  background-image: url("http://spicedpeachblog.com/wp-content/uploads/2015/05/SPG-9216.jpg");
-}
-
-.frijol {
-  background-image: url("https://farm5.static.flickr.com/4227/34507064133_3900111376_b.jpg");
-}
-
-.thai {
-  background-image: url("https://images.pexels.com/photos/209540/pexels-photo-209540.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-}
-
-.crabsalad {
-  background-image: url("https://images.pexels.com/photos/51948/gourmet-salad-lunch-breakfast-51948.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
 
 .description {
