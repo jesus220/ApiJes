@@ -51,7 +51,7 @@ ul {
   HEADER
 */
 header {
-  min-height: 100vh;
+  min-height: 78vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent), url("../img/logobueno.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
@@ -65,7 +65,7 @@ header {
   */
 }
 .contorno{
-  min-height: 40vh;
+  min-height: 35vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent), url("../img/churrasco.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
@@ -75,7 +75,7 @@ header {
 }
 
 .contorno1{
-  min-height: 40vh;
+  min-height: 35vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent), url("../img/coctel.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
