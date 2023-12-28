@@ -56,11 +56,11 @@ h6 {
 }
 
 .home {
-  background-image: url("../img/POrtada.jpg");
+  background-image: url("../img/logobueno.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  color: #fff;
+  color: #4b2e0a;
   padding: 20px 30px;
 }
 
@@ -90,7 +90,7 @@ h6 {
   text-decoration: none;
   font-size: 14px;
   font-weight: 400px;
-  color: #2bb8cc;
+  color: #212323;
 }
 
 .info:hover {
@@ -127,14 +127,14 @@ h6 {
 }
 
 .opciones {
-  color: #2bb8cc;
+  color: #111415;
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
 
 .search-input {
-  border-bottom: 1px solid #2bb8cc;
+  border-bottom: 1px solid #252727;
   margin-left: 20px;
   margin-right: 10px;
   font-size: 14px;
@@ -152,7 +152,7 @@ h6 {
 
 .arrow:hover {
   text-decoration: none;
-  color: #2bb8cc;
+  color: #2f3131;
 }
 
 .search {
@@ -160,16 +160,16 @@ h6 {
   border: none;
   font-size: 14px;
   font-weight: 400;
-  color: #2bb8cc;
+  color: #4b2e0a;
 }
 
 ::placeholder {
-  color: #2bb8cc;
+  color: #4b2e0a;
   font-size: 14px;
 }
 
 .menu-btn {
-  background-color: rgba(43, 184, 204, 0.4);
+  background-color: #4b2e0a;
   padding: 20px 20px;
   margin-left: 10px;
   padding-right: 0 !important;
@@ -182,7 +182,7 @@ h6 {
   background-repeat: no-repeat;
   background-size: 30px;
   background-position: center center;
-  background-color: #2bb8cc;
+  background-color: #4b2e0a;
 }
 
 .icono-menu {
@@ -206,7 +206,7 @@ h6 {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
-  color: #2bb8cc;
+  color: #4b2e0a;
   padding: 16px 50px;
   transition: all.3s;
   background-image: url("https://s18.postimg.cc/g6tz9g789/Dise_o_BTN-03.png");
@@ -215,7 +215,7 @@ h6 {
 }
 
 .btn-design:hover {
-  background-color: #2bb8cc;
+  background-color: #4b2e0a;
   transition: all ease 0.5s;
   text-decoration: none;
   color: #1a233a;
@@ -236,7 +236,7 @@ h6 {
 }
 
 .sec-about {
-  color: #99d8dd;
+  color: #4b2e0a;
   display: flex;
   justify-content: flex-end;
   margin-top: 160px;
@@ -276,7 +276,7 @@ h6 {
 }
 
 .info-about {
-  background-color: #c7dcdd;
+  background-color: #4b2e0a;
   margin-top: -360px;
   z-index: -5;
 }
@@ -314,7 +314,7 @@ h6 {
 }
 
 .category-content {
-  color: #fff;
+  color:#4b2e0a;
   width: 100%;
   height: 100%;
   display: flex;
@@ -362,7 +362,7 @@ h6 {
 
 .title-contact-card {
   padding-top: 120px;
-  color: #2bb8cc;
+  color: #4b2e0a;
   z-index: 10;
 }
 
@@ -383,7 +383,7 @@ h6 {
 
 .suscripcion {
   background: none;
-  color: #2bb8cc;
+  color: #4b2e0a;
   font-size: 25px;
   font-family: quicksand;
   font-weight: light;
@@ -393,7 +393,7 @@ h6 {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom-color: #2bb8cc;
+  border-bottom-color: #4b2e0a;
   width: 100%;
   margin-top: 40px;
   padding: 10px;
@@ -408,7 +408,7 @@ h6 {
 .quote {
   font-size: 25px;
   font-weight: bold;
-  color: #2bb8cc;
+  color: #4b2e0a;
   margin-bottom: 120px;
 }
 
@@ -431,7 +431,7 @@ h6 {
 }
 
 .botones-footer {
-  color: #2bb8cc;
+  color: #4b2e0a;
   text-decoration: none;
   text-transform: uppercase;
   display: flex;
@@ -440,7 +440,7 @@ h6 {
 }
 
 .boton-menu-footer {
-  color: #2bb8cc;
+  color: #4b2e0a;
   margin: 10px;
   background-color: #1a233a;
 }
@@ -459,7 +459,7 @@ h6 {
 }
 
 .title-social-media {
-  color: #2bb8cc;
+  color: #4b2e0a;
   font-family: Mr Dafoe;
   font-size: 30px;
 }
@@ -494,7 +494,7 @@ h6 {
 .info-horario {
   display: flex;
   text-decoration: none;
-  color: #2bb8cc;
+  color: #4b2e0a;
 }
 
 .info-horario:hover {
@@ -507,7 +507,7 @@ h6 {
 }
 
 .creditos {
-  background-color: #99d8dd;
+  background-color: #4b2e0a;
 }
 
 .copyright {
@@ -540,7 +540,7 @@ h6 {
 .menu-link {
   font-size: 16px;
   text-decoration: none;
-  color: #99d8dd;
+  color: #4b2e0a;
   margin: 20px;
   padding: 15px;
 }
@@ -626,7 +626,7 @@ h6 {
 }
 
 .title-plato {
-  color: #2bb8cc;
+  color: #4b2e0a;
   margin-left: 120px;
   z-index: 10;
   margin-bottom: 40px;
@@ -645,7 +645,7 @@ h6 {
   margin-bottom: 40px;
   font-size: 20px;
   font-weight: 700 !important;
-  color: #99d8dd;
+  color: #4b2e0a;
 }
 
 .brush-plato {

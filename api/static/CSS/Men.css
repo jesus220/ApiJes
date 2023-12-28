@@ -4,11 +4,30 @@ body {
   overflow-x: hidden;
 }
 
+.map-container {
+  width: 60px; /* ajusta el ancho según tus necesidades */
+  height: 90px; /* ajusta la altura según tus necesidades */
+  margin: 20px auto; /* para centrar el contenedor en la página */
+  border: 1px solid #ccc; /* borde para resaltar el área del mapa */
+}
+
+/* Ajuste opcional para centrar el mapa en el contenedor */
+#gmp-map {
+  width: 100%;
+  height: 100%;
+}
+#map{
+  height: 400px;
+}
+
 /*
   GLOBAL
 */
 h2 {
   margin-top: 0;
+}
+p{
+  font-size: 25px;
 }
 
 button {
@@ -33,7 +52,7 @@ ul {
 */
 header {
   min-height: 100vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent), url("../img/") no-repeat center center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent), url("../img/logobueno.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -44,6 +63,25 @@ header {
   /*
     CENTER HEADER TEXT
   */
+}
+.contorno{
+  min-height: 40vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent), url("../img/churrasco.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.8;
+}
+
+.contorno1{
+  min-height: 40vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent), url("../img/coctel.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.8;
 }
 header nav {
   padding: 15px 35px;
@@ -209,7 +247,7 @@ nav div.show {
   align-items: center;
 }
 .add-flex .stuffed-cherries {
-  background: url("https://s-media-cache-ak0.pinimg.com/736x/61/b1/98/61b19844448b2bad5c78e9a2c6347986.jpg") no-repeat center center;
+  background: url(../img/cortes.jpg) no-repeat center center;
   background-size: cover;
   height: 315px;
   width: 320px;
@@ -255,6 +293,7 @@ nav div.show {
 .menu-images img {
   width: 100%;
 }
+
 
 /*
   THE PERFECT BLEND SECTION

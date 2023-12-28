@@ -19,17 +19,17 @@
         <!--     <ul> -->
         <ul>
           <button class="exit-menu fa fa-times"></button>
-          <li><a href="#" class="active">Bienvenido</a></li>
-          <li><a href="#">Menú</a></li>
-          <li><a href="#">Contactanos</a></li>
-          <li><a href="#">Cuenta</a></li>
+          <li><a href="{% url 'Men' %}" class="active">Bienvenido</a></li>
+          <li><a href="{% url 'Menu2' %}">Menú</a></li>
+          <li><a href="#map">Contactanos</a></li>
+          <li><a href="{% url 'login' %}">Cuenta</a></li>
         </ul>
         <!--     </ul> -->
       </div>
     </nav>
     <div class="center">
       <h1 class="alex-brush">Bienvenido</h1>
-      <h2>al Pibe Argentino</h2>
+      <h2>Pibe Argentino</h2>
       <span id="asterisk">*</span>
       <p>Grill</p>
     </div>
@@ -37,87 +37,99 @@
   
   <section class="add-padding add-flex">
     <div class="center-text">
-      <h1 class="alex-brush"><span class="custom-font">Discover</span><br />OUR STORY</h1>
-      <h2>*</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit aspernatur beatae laboriosam dicta tempora ab, dolorem mollitia perspiciatis, deleniti quidem dolor repellat animi. Quidem eligendi iste distinctio fugit maxime modi. Lorem ipsum dolor sit amet.</p>
-      <a href="#">about us</a>
+      <h1 class="alex-brush"><span class="custom-font">Ofrecemos</span><br /></span></h1>
+      <h2>**************************</h2>
+      <p>Un buffet con diferentes cortes de carne como arrachera, rib eye, asado de tira y churrasco,  
+         acompañada de chistorra y chorizo argentino con unas ricas empanadas como entrada
+         todo esto a tan solo $279 pesos por adulto y $149 pesos por niño.
+      </p>
+      <p>No incluye bebidas</p>
     </div>
     <div class="stuffed-cherries" data-aos="fade-left" data-aos-delay="300">
     </div>
   </section>
   
-  <section class="bread-background center-h1">
-    <h1 class="custom-h1 alex-brush"><span class="custom-font">Tasteful</span><br />RECIPES</h1>
+  <section class="contorno center-h1">
+    <h1 class="custom-h1 alex-brush"><span class="custom-font">Las mejores</span><br />Carnes</h1>
   </section>
   
   <section class="menu add-flex add-padding">
     <div class="menu-images">
-      <img src="http://www.konoba-mirakul.com/wp-content/uploads/2015/03/delikatesa4.jpg" data-aos="fade-down" data-aos-delay="300" />
-      <img src="http://www.konoba-mirakul.com/wp-content/uploads/2015/03/delikatesa21.jpg" data-aos="fade-left" data-aos-delay="300" />
-      <img src="https://www.gourmetsociety.co.uk/uploads/images/restaurants/093ce538894c95892f62dc93bb023636-image.png" data-aos="fade-right" data-aos-delay="300" />
-      <img src="http://retrokitchenbar.com/wp-content/uploads/2014/05/menu-thumb-4-300x218.jpg" data-aos="fade-up" data-aos-delay="300" />
+      <img src="../static/img/empanada-carne.jpg" data-aos="fade-down" data-aos-delay="300" />
+      <img src="../static/img/ensalada.jpeg" data-aos="fade-left" data-aos-delay="300" />
+      <img src="../static/img/pasta.jpg" data-aos="fade-right" data-aos-delay="300" />
+      <img src="../static/img/mila.jpeg" data-aos="fade-up" data-aos-delay="300" />
     </div>
     <div class="center-text">
-      <h1><span class="custom-font alex-brush">Discover</span><br />MENU</h1>
-      <h2>*</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae distinctio possimus tempore voluptatem, quo repellendus quas culpa quasi, hic optio sapiente molestias necessitatibus, aliquam excepturi consequatur a voluptates quam beatae!</p>
-      <a href="#">view the full menu</a>
+      <h1><span class="custom-font alex-brush">De Nuestra </span><br /><br /><span class="custom-font">Carta</span></h1>
+      <h2>*****************************</h2>
+      <p>Nuestra carta consta de diversos platillos, donde podras encontrar una gran variedad de pastas, sopas,
+         carne roja, blanca y pescado
+      </p>
+      <a href="#">Ir al Menú</a>
     </div>
   </section>
   
-  <section class="cake-background center-h1">
-    <h1 class="custom-h1"><span class="custom-font alex-brush">The perfect</span><br />BLEND</h1>
+  <section class="contorno1 center-h1">
+    <h1 class="custom-h1"><span class="custom-font alex-brush">Las bebidas</span><br />PERFECTAS</h1>
   </section>
   
   <section class="add-flex reservation-section">
     <div class="center-text add-padding">
-      <h1><span class="custom-font alex-brush">Culinary</span><br />DELIGHT</h1>
-      <h2>*</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim animi odit in dignissimos neque ratione, laboriosam rerum! Deleniti accusamus non, aliquam tempora, mollitia laborum ad, fugiat at explicabo esse aut. Lorem ipsum dolor sit amet, adipisicing elit.</p>
-      <a href="#">make a reservation</a>
+      <h1><span class="custom-font alex-brush">De Nuestro </span><br /><br /><span class="custom-font">Bar</span></h1>
+      <h2>*****************************</h2>
+      <p> Disfrute de nuestras mejores bebidas, contamos con una extensa variedad de bebidas y cocteles con y sin alcohol
+      </p>
+      <a href="#">Ir al Menú</a>
     </div>
     <div>
-      <img src="http://www.konoba-mirakul.com/wp-content/uploads/2015/03/kulinarstvo11.jpg" data-aos="fade-up" data-aos-delay="300" />
-      <img src="http://www.konoba-mirakul.com/wp-content/uploads/2015/03/kulinarstvo21.jpg" data-aos="fade-down" data-aos-delay="300" />
+      <img src="../static/img/coc.jpeg" data-aos="fade-up" data-aos-delay="300" style="width: 320px;"/>
+      <img src="../static/img/alcohol.png" data-aos="fade-down" data-aos-delay="300" style="width: 320px;"/>
     </div>
   </section>
-  
+  <!--Grid-fixed-contactos-->
+  <div id="map" style="height: 400px;">
+    <gmp-map center="19.385623, -99.075565" zoom="18" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="19.385623, -99.075565" title="My location"></gmp-advanced-marker>
+    </gmp-map>
+  </div>
+
   <footer>
-    <button class="to-top"><i class="fa fa-chevron-up"></i>TOP</button>
-  
+    
     <div class="restaurant-info">
   
       <div class="locations">
-        <h4>LOCATIONS</h4>
+        <h4>Ubicación</h4>
         <div class="location-1">
-          <h5>376 Van Brun St<br />Brooklyn, NY &#8212; 11231</h5>
+          <h5>Avenida Javier Rojo Gómez 552<br /> Doctor Alfonso Ortiz Tirado</h5>
         </div>
         <!--location-1-->
         <div class="location-2">
-          <h5>25 Union Square West<br />New York, NY &#8212; 10003</h5>
+          <h5>Iztapalapa, 09020<br />Ciudad de México, CDMX México<br /></h5>
         </div>
       </div>
       <!--locations end-->
   
       <div class="hours">
-        <h4>HOURS</h4>
+        <h4>Horario</h4>
         <div class="weekdays">
-          <h5>Monday - Thursday<br />
-            5:30pm - 10:00pm
+          <h5>Lunes - Sabado<br />
+            13:00 - 22:00
           </h5>
         </div>
         <!--weekdays end-->
   
         <div class="weekends">
-          <h5>Friday & Saturday<br />
-            5:30pm - 11:00pm
+          <h5>Domingo<br />
+            11:00 - 21:00
           </h5>
         </div>
         <!--weekends end-->
   
         <div class="private-events">
-          <h5>Available for private<br />
-            events on Sunday
+          <h5>Disponible para<br />
+            reservaciones al numero<br />
+            55-22-35-73-01
           </h5>
         </div>
   
