@@ -3,143 +3,634 @@
 <html>
 
 <head>
-  
-  
-  <link href="{% static 'CSS/Men.css' %}" rel="stylesheet">
-  <link href="{% static 'CSS/startmin.css' %}" rel="stylesheet">
-  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAabz8IoM-VT7LL-1AL0be-JQ-ge6Lrdcc&callback=console.debug&libraries=maps,marker&v=beta"></script>
+  <meta charset="utf-8">
+  <link href="{% static 'CSS/Menu2.css' %}" rel="stylesheet">
   <script src="https://www.paypal.com/sdk/js?client-id=AeQryshhocwWEmWDQrroGre4lb6ZmvqzCQ20OXukzf461Vi5YE_drX6XgAx4cVbZzg_ALb_02Ypjdukt&amp;currency=MXN" data-uid-auto="uid_gurfqkrdjrrfkmuisejljfrdcclpzf"></script>
   <title>Pibe Argentino</title>
 </head>
-<header>
-    <nav>
-      <h2><a href="#" id="logo">Pibe</a></h2>
-      <button class="nav-button fa fa-bars"></button>
-      <div>
-        <!--     <ul> -->
-        <ul>
-          <button class="exit-menu fa fa-times"></button>
-          <li><a href="{% url 'Men' %}" class="active">Bienvenido</a></li>
-          <li><a href="{% url 'Menu2' %}">Menú</a></li>
-          <li><a href="#map">Contactanos</a></li>
-          <li><a href="{% url 'login' %}">Cuenta</a></li>
-        </ul>
-        <!--     </ul> -->
+
+<body>
+
+  <div class="conti">
+    <img class="logo" src="" alt="Trulli" width="500" height="333">
+    <h1>Menú</h1>
+  </div>
+  
+  <div class="salatat">Entradas
+  </div>
+  <div class="cards">
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="../static/img/chorizo.jpeg" alt="wave" />
       </div>
-    </nav>
-    <div class="center">
-      <h1 class="alex-brush">Bienvenido</h1>
-      <h2>Pibe Argentino</h2>
-      <span id="asterisk">*</span>
-      <p>Grill</p>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Chorizo Argentino
+          <small>$86.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          Chorizo tipo argentino de 200g
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" >
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input type="hidden" name="hosted_button_id" value="QRF7H2FYFFPCA" />
+              <input type="hidden" name="currency_code" value="MXN" />
+              <input type="image" src="https://www.paypalobjects.com/es_XC/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" title="PayPal es una forma segura y fácil de pagar en línea." alt="Comprar ahora" />
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
   
-  <section class="add-padding add-flex">
-    <div class="center-text">
-      <h1 class="alex-brush"><span class="custom-font">Ofrecemos</span><br /></span></h1>
-      <h2>**************************</h2>
-      <p>Un buffet con diferentes cortes de carne como arrachera, rib eye, asado de tira y churrasco,  
-         acompañada de chistorra y chorizo argentino con unas ricas empanadas como entrada
-         todo esto a tan solo $279 pesos por adulto y $149 pesos por niño.
-      </p>
-      <p>No incluye bebidas</p>
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="../static/img/chistorraa.jpeg" alt="beach" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Chistorra
+          <small>$86.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          Chistorra de 200g
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="stuffed-cherries" data-aos="fade-left" data-aos-delay="300">
-    </div>
-  </section>
   
-  <section class="contorno center-h1">
-    <h1 class="custom-h1 alex-brush"><span class="custom-font">Las mejores</span><br />Carnes</h1>
-  </section>
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="../static/img/Morcilla.png" alt="mountain" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Morcilla a la Parrilla
+          <small>$99.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          Morcilla a la parrilla de 180g
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
   
-  <section class="menu add-flex add-padding">
-    <div class="menu-images">
-      <img src="../static/img/empanada-carne.jpg" data-aos="fade-down" data-aos-delay="300" />
-      <img src="../static/img/ensalada.jpeg" data-aos="fade-left" data-aos-delay="300" />
-      <img src="../static/img/pasta.jpg" data-aos="fade-right" data-aos-delay="300" />
-      <img src="../static/img/mila.jpeg" data-aos="fade-up" data-aos-delay="300" />
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="../static/img/chinchulin.jpeg" alt="field" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Chinchulines
+          <small>$86.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          Plato de chichulines de 250g
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">Pagar</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="center-text">
-      <h1><span class="custom-font alex-brush">De Nuestra </span><br /><br /><span class="custom-font">Carta</span></h1>
-      <h2>*****************************</h2>
-      <p>Nuestra carta consta de diversos platillos, donde podras encontrar una gran variedad de pastas, sopas,
-         carne roja, blanca y pescado
-      </p>
-      <a href="#">Ir al Menú</a>
-    </div>
-  </section>
   
-  <section class="contorno1 center-h1">
-    <h1 class="custom-h1"><span class="custom-font alex-brush">Las bebidas</span><br />PERFECTAS</h1>
-  </section>
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="../static/img/mollejas.png" alt="water" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Las Mollejas de Res
+          <small>$110.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          Mollejas de res de 250g
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
   
-  <section class="add-flex reservation-section">
-    <div class="center-text add-padding">
-      <h1><span class="custom-font alex-brush">De Nuestro </span><br /><br /><span class="custom-font">Bar</span></h1>
-      <h2>*****************************</h2>
-      <p> Disfrute de nuestras mejores bebidas, contamos con una extensa variedad de bebidas y cocteles con y sin alcohol
-      </p>
-      <a href="#">Ir al Menú</a>
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="../static/img/queso.jpg" alt="beach"/>
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Queso Provoleta
+          <small>$95.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          Te envolvera un sabor fuerte con una rebanada de jitomate asado, oregano y un poco de aceite
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div>
-      <img src="../static/img/coc.jpeg" data-aos="fade-up" data-aos-delay="300" />
-      <img src="../static/img/alcohol.png" data-aos="fade-down" data-aos-delay="300"/>
+
+
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="../static/img/queso_anchoas.jpeg" alt="beach" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Queso Provoleta con Anchoas
+          <small>$130.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          Un delicioso queso provoleta con anchoas de 250g
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
-  <!--Grid-fixed-contactos-->
-  <div id="map" style="height: 400px;">
-    <gmp-map center="19.385623, -99.075565" zoom="18" map-id="DEMO_MAP_ID">
-        <gmp-advanced-marker position="19.385623, -99.075565" title="My location"></gmp-advanced-marker>
-    </gmp-map>
+
+
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="../static/img/quesoC.jpeg" alt="beach"/>
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Queso Fundido con Chistorra
+          <small>$110.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          Delicioso queso fundido con chistorra de 250g
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card" >
+      <div class="card__image-holder">
+        <img class="card__image" src="../static/img/quesoS.jpg" style="margin-top:-30px" alt="beach"/>
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          Queso Fundido Sencillo
+          <small>$99.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          Un delicioso queso fundido de 250g
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  
+  </div>
+  <!--Menu de abajo-->
+  <div class="sandwich">asdfgh</div>
+  
+  <div class="cards">
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="wave" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          فتوش
+          <small>د.م.39.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          فتوش
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="beach" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          تبولة
+          <small>د.م.39.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          تبولة
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="mountain" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          سالاد يوناني
+          <small>د.م.35.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          سالاد يوناني
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="field" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          سالاد فصل
+          <small>د.م.30.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          سالاد فصل
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="water" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          سالاد باستا بتونه
+          <small>د.م.39.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          سالاد باستا بتونه
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="water"/>
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          سالاد شيرازي
+          <small>د.م.35.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          سالاد شيرازي
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="water"/>
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          سالاد شيرازي
+          <small>د.م.35.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          سالاد شيرازي
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
   </div>
 
-  <footer>
-    
-    <div class="restaurant-info">
+  <!--Menu de abajo 3-->
+  <div class="sandwich">asdfgh</div>
   
-      <div class="locations">
-        <h4>Ubicación</h4>
-        <div class="location-1">
-          <h5>Avenida Javier Rojo Gómez 552<br /> Doctor Alfonso Ortiz Tirado</h5>
+  <div class="cards">
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="wave" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          فتوش
+          <small>د.م.39.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          فتوش
         </div>
-        <!--location-1-->
-        <div class="location-2">
-          <h5>Iztapalapa, 09020<br />Ciudad de México, CDMX México<br /></h5>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
         </div>
       </div>
-      <!--locations end-->
-  
-      <div class="hours">
-        <h4>Horario</h4>
-        <div class="weekdays">
-          <h5>Lunes - Sabado<br />
-            13:00 - 22:00
-          </h5>
-        </div>
-        <!--weekdays end-->
-  
-        <div class="weekends">
-          <h5>Domingo<br />
-            11:00 - 21:00
-          </h5>
-        </div>
-        <!--weekends end-->
-  
-        <div class="private-events">
-          <h5>Disponible para<br />
-            reservaciones al numero<br />
-            55-22-35-73-01
-          </h5>
-        </div>
-  
-      </div>
-      <!--hours end-->
-  
     </div>
-    <!--restaurant-info end-->
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="beach" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          تبولة
+          <small>د.م.39.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          تبولة
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="mountain" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          سالاد يوناني
+          <small>د.م.35.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          سالاد يوناني
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="field" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          سالاد فصل
+          <small>د.م.30.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          سالاد فصل
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="water" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          سالاد باستا بتونه
+          <small>د.م.39.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          سالاد باستا بتونه
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">Read more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card__image-holder">
+        <img class="card__image" src="" alt="water" />
+      </div>
+      <div class="card-title">
+        <a href="#" class="toggle-info btn">
+          <span class="left"></span>
+          <span class="right"></span>
+        </a>
+        <h2>
+          سالاد شيرازي
+          <small>د.م.35.00</small>
+        </h2>
+      </div>
+      <div class="card-flap flap1">
+        <div class="card-description">
+          سالاد شيرازي
+        </div>
+        <div class="card-flap flap2">
+          <div class="card-actions">
+            <a href="#" class="btn">للمزيد</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
 
-  
-  </footer>
-  
-  <script src="{% static 'Js/Men.js' %}"></script>
+
+
+
+
+  <script src="{% static 'Js/jquery.min.js' %}"></script>
+  <script src="{% static 'Js/bootstrap.min.js' %}"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+  <script src="{% static 'Js/metisMenu.min.js' %}"></script>
+
+
+
+         <!-- Custom Theme JavaScript -->
+  <script src="{% static 'Js/startmin.js' %}"></script>
+
+  <script src="{% static 'Js/Menu2.js' %}"></script>
+
