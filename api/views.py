@@ -34,6 +34,11 @@ class index (APIView):
     def get(self, request):
         return render(request,self.template_name)
     
+class Carta (APIView):
+    template_name="Carta.html"
+    def get(self, request):
+        return render(request,self.template_name)
+    
 class Menu2 (APIView):
     template_name="Menu2.html"
     def get(self, request):

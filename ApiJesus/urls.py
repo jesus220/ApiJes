@@ -29,6 +29,7 @@ urlpatterns = [
     path('tables.html', tables.as_view(), name='tables'),
     path('Menu2.html', Menu2.as_view(), name='Menu2'),
     path('Men.html', Men.as_view(), name='Men'),
+    path('Carta.html', Carta.as_view(), name='Carta'),
     path('Menu.html', Menu.as_view(), name='Menu'),
     path('forgot-password.html', forgot.as_view(), name='forgot'),
     path('register/', RegistroUsuarioView.register, name= 'register'),
