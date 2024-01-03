@@ -39,6 +39,11 @@ class Carta (APIView):
     def get(self, request):
         return render(request,self.template_name)
     
+class Bebida (APIView):
+    template_name="Bebidas.html"
+    def get(self, request):
+        return render(request,self.template_name)
+    
 class Menu2 (APIView):
     template_name="Menu2.html"
     def get(self, request):
