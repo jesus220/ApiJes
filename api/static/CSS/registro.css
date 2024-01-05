@@ -1,0 +1,64 @@
+body {
+    background-image: url(../img/logobueno.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+  
+  
+.container {
+    align-items: center;
+    justify-content: center;
+    
+}
+  
+.panel {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+.panel-heading {
+    background-color: #7d6968;
+    color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 15px;
+    text-align: center;
+}
+  
+.panel-body {
+    padding: 20px;
+}
+  
+label {
+    font-weight: bold;
+    color: #000000;
+}
+  
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+  
+.btn-primary {
+    background-color: #d9534f;
+    border: 1px solid #d9534f;
+}
+  
+.btn-primary:hover {
+    background-color: #7d6968;
+    border: 1px solid #7d6968;
+}
+  
+.text-center {
+    text-align: center;
+}
+  
+.small {
+ font-size: 80%;
+}

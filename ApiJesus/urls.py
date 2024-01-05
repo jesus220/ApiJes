@@ -24,17 +24,20 @@ from django.urls import path
 
 
 urlpatterns = [
-    path('', Home.as_view(), name='home'),
-    path('index.html', index.as_view(), name='index'),
+    path('admin/', admin.site.urls),
+    path('', views.login_view, name='login_view'),
+    path('/registro', views.registro, name='registro'),
+    path('index/', views.index, name='index'),
     path('tables.html', tables.as_view(), name='tables'),
     path('Menu2.html', Menu2.as_view(), name='Menu2'),
     path('Men.html', Men.as_view(), name='Men'),
     path('Carta.html', Carta.as_view(), name='Carta'),
     path('Bebidas.html', Bebida.as_view(), name='Bebida'),
-    path('Menu.html', Menu.as_view(), name='Menu'),
     path('forgot-password.html', forgot.as_view(), name='forgot'),
-    path('register/', RegistroUsuarioView.register, name= 'register'),
-    path('login/', LoginView.as_view(template_name="login.html"), name= 'login'),
+    # path('register/', RegistroUsuarioView.register, name= 'register'),
+    # path('login/', LoginView.as_view(template_name="login.html"), name= 'login'),
+     
+
     path('chart/', views.chart_view, name='chart_view'),
     
 ]
