@@ -1,3 +1,4 @@
+from telnetlib import LOGOUT
 from rest_framework.views import APIView
 from django.http import HttpRequest
 from django.http import HttpResponse
@@ -15,10 +16,14 @@ from django.db.models import Count
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.conf import settings
+from django.contrib.auth.views import LogoutView
+from django.shortcuts import redirect
 
 # from django.conf import settings
 # from api.models import Product
-
+from django.contrib.auth import logout
+from django.shortcuts import redirect
+from django.contrib import messages
 
 
 
@@ -82,20 +87,45 @@ class register(APIView):
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 
+
 def login_view(request):
     if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-
+        username = request.POST['username']
+        password = request.POST['password']
         user = authenticate(request, username=username, password=password)
+
         if user is not None:
             login(request, user)
-            return redirect('index')
+            messages.success(request, f"Bienvenido, {user.username}!")
+            # Redirigir según el tipo de usuario
+            if user.is_staff:
+                # Mensaje en consola
+                print("Redirigiendo a la vista de administrador")
+                return redirect("index")  # Cambia "admin_dashboard" a tu URL de administrador
+            else:
+                # Mensaje en consola
+                print("Tipo de usuario no válido. Redirigiendo a la vista de inicio de sesión")
+                return redirect("Men")
         else:
-            error_message = "Los datos son incorrectos. Por favor, inténtalo de nuevo."
-            return render(request, 'login.html', {'error_message': error_message})
+            messages.error(request, "Credenciales no válidas.")
+            # Mensaje en consola
+            print("Credenciales no válidas. Redirigiendo a la vista de inicio de sesión")
 
     return render(request, 'login.html')
+# def login_view(request):
+#     if request.method == 'POST':
+#         username = request.POST.get('username')
+#         password = request.POST.get('password')
+
+#         user = authenticate(request, username=username, password=password)
+#         if user is not None:
+#             login(request, user)
+#             return redirect('index')
+#         else:
+#             error_message = "Los datos son incorrectos. Por favor, inténtalo de nuevo."
+#             return render(request, 'login.html', {'error_message': error_message})
+
+#     return render(request, 'login.html')
 
 
 
@@ -151,6 +181,13 @@ def registro(request):
             return render(request, 'register.html', {'error_message': error_message})
 
     return render(request, 'register.html')
+
+
+def salir(request):
+    logout(request)
+    messages.success(request, "Tu sesión se ha cerrado correctamente.")
+    return redirect("login_view")
+
 
     
 

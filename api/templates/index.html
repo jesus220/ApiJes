@@ -54,6 +54,9 @@
 
                   <!-- Encabezado -->
                 <ul class="nav navbar-right navbar-top-links">
+                    {% if user.is_authenticated %}
+                        <p>Bienvenido, {{ user.username }}.</p>
+                     {% endif %}
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                             <i class="fa fa-user fa-fw"></i>Usuario <b class="caret"></b>
@@ -64,6 +67,9 @@
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-gear fa-fw"></i> Configuracion</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'salir' %}"><i class="fa fa-gear fa-fw"></i> Cerrar sesión</a>
                             </li>
                             <li class="divider"></li>
                             <li>

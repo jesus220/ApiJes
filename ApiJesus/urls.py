@@ -21,6 +21,7 @@ from api.views import *
 from django.contrib import admin
 from django.contrib.auth.views import LoginView, LogoutView
 from django.urls import path
+from django.contrib.auth import views as auth_views
 
 
 urlpatterns = [
@@ -34,10 +35,8 @@ urlpatterns = [
     path('Carta.html', Carta.as_view(), name='Carta'),
     path('Bebidas.html', Bebida.as_view(), name='Bebida'),
     path('forgot-password.html', forgot.as_view(), name='forgot'),
-    # path('register/', RegistroUsuarioView.register, name= 'register'),
-    # path('login/', LoginView.as_view(template_name="login.html"), name= 'login'),
-     
-
     path('chart/', views.chart_view, name='chart_view'),
+    path('salir', salir, name="salir"),
+
     
 ]
