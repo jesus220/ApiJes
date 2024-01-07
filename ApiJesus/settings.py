@@ -88,20 +88,20 @@ WSGI_APPLICATION = 'ApiJesus.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default':{
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'PibeArgentino',
-        'USER': 'postgres',
-        'PASSWORD': '12345',
-        'HOST': 'localhost',  # O la dirección de tu servidor PostgreSQL
-        'PORT': 5432,           # Deja en blanco para el valor predeterminado (5432)
-        }
-}
-
 # DATABASES = {
-#     'default': dj_database_url.parse('postgres://pibe_argentino_user:QDKRnEyigFUN7pQ2pVE0ZYbk0G6YfVyJ@dpg-cligv7mf27hc73cruig0-a.oregon-postgres.render.com/pibe_argentino')   
+#     'default':{
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'PibeArgentino',
+#         'USER': 'postgres',
+#         'PASSWORD': '12345',
+#         'HOST': 'localhost',  # O la dirección de tu servidor PostgreSQL
+#         'PORT': 5432,           # Deja en blanco para el valor predeterminado (5432)
+#         }
 # }
+
+DATABASES = {
+    'default': dj_database_url.parse('postgres://pibe_argentino_user:QDKRnEyigFUN7pQ2pVE0ZYbk0G6YfVyJ@dpg-cligv7mf27hc73cruig0-a.oregon-postgres.render.com/pibe_argentino')   
+}
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',

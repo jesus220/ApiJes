@@ -18,6 +18,16 @@ body {
     background-color: #fff;
 }
 
+.bienvenida{
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    font-size: 18px; /* Cambia el tamaño del texto */
+    color: #ffffff; /* Cambia el color del texto */
+    padding: 10px; /* Añade relleno alrededor del texto */
+    border: 1px solid #ddd; /* Añade un borde alrededor del párrafo */
+    border-radius: 5px; /* Hace que los bordes sean redondeados */
+    text-align: center; /* Centra el texto */
+}
+
 @media(min-width:768px) {
     #page-wrapper {
         position: inherit;

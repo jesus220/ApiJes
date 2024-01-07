@@ -17,16 +17,17 @@
       <div>
        
         <!--     <ul> -->
-        <ul>
-          {% if user.is_authenticated %}
-          <p class="mensaje">Bienvenido: {{ user.username }}.</p>
-          {% endif %}
+          
+          <ul>
           <button class="exit-menu fa fa-times"></button>
           <li><a href="{% url 'Men' %}" class="active">Bienvenido</a></li>
           <li><a href="{% url 'Menu2' %}">Menú</a></li>
           <li><a href="#map">Contactanos</a></li>
           <li><a href="{% url 'salir' %}">Cerrar sesión</a></li>
         </ul>
+        {% if user.is_authenticated %}
+          <p class="mensaje">Bienvenido: {{ user.username }}.</p>
+          {% endif %}
         <!--     </ul> -->
       </div>
     </nav>
