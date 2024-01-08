@@ -1,23 +1,23 @@
 let dataTable;
 let dataTableIsInitialized=false;
 
-const dataTableOptions ={
-    columnDefs:[
-        {classname: "centered", targets:[0,1,2,3,4,5,6,7,8,9]},
-        {orderable: true, targets:[0,1,2,3,4,5,6,7,8,9]},
-        {searchable: true, targets:[0,1,2,3,4,5,6,7,8,9]} 
+const dataTableOptions = {
+    columnDefs: [
+        { className: "centered", targets: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] },
+        { orderable: true, targets: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] },
+        { searchable: true, targets: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] }
     ]
-}
+};
 
-const initDataTable=async() =>{
-    if(dataTableIsInitialized){
+const initDataTable = async () => {
+    if (dataTableIsInitialized) {
         dataTable.destroy();
     }
 
     await encuesta();
 
-    dataTable=$('#dataTables-example').DataTable(dataTableOptions);
-    dataTableIsInitialized = true
+    dataTable = $('#dataTables-example').DataTable(dataTableOptions);
+    dataTableIsInitialized = true;
 };
 
 const encuesta = async () => {
@@ -49,6 +49,7 @@ const encuesta = async () => {
         alert(ex);
     }
 };
-window.addEventListener("load", async() => {
+
+window.addEventListener("load", async () => {
     await initDataTable();
 });
