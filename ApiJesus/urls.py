@@ -24,6 +24,7 @@ from django.urls import path
 from django.contrib.auth import views as auth_views
 
 
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.login_view, name='login_view'),
@@ -37,6 +38,7 @@ urlpatterns = [
     path('forgot-password.html', forgot.as_view(), name='forgot'),
     path('chart/', views.chart_view, name='chart_view'),
     path('salir', salir, name="salir"),
+    path('encuesta/', views.encuesta_view, name='encuesta_view'),
 
     
 ]

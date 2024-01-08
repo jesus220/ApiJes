@@ -40,36 +40,33 @@
     <body>
 
         <div id="wrapper">
-       
+
             <!-- Navigation -->
             <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="{% url 'index' %}">Startmin</a>
+                    <a class="navbar-brand" href="{% url 'index' %}">Pibe Argentino Grill</a>
                 </div>
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
 
-                <ul class="nav navbar-right navbar-top-links">    
-                    </li>
+                <ul class="nav navbar-nav navbar-left navbar-top-links">
+                    <li><a href="{% url 'Men' %}"><i class="fa fa-home fa-fw"></i> Sitio web</a></li>
+                </ul>
+
+                  <!-- Encabezado -->
+                <ul class="nav navbar-right navbar-top-links">
+                  
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-user fa-fw"></i> Usuario <b class="caret"></b>
+                            <i class="fa fa-user fa-fw"></i>Usuario <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
                             <li>
-                                <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                            </li>
-                            <li class="divider"></li>
-                            <li>
-                                <a href="{% url 'salir' %}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                                <a href="{% url 'salir' %}"><i class="fa fa-gear fa-fw"></i> Cerrar sesión</a>
                             </li>
                         </ul>
                     </li>
@@ -77,50 +74,22 @@
                 <!-- /.navbar-top-links -->
             </nav>
 
+
             <aside class="sidebar navbar-default" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
-                            </div>
-                            <!-- /input-group -->
+                        <li>
+                            <a href="{% url 'index' %}"class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
-                            <a href="{% url 'index' %}"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="{% url 'chart_view' %}"><i class="fa fa-bar-chart-o fa-fw"></i> Graficas</a>                            
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="{% url 'chart_view' %}">Flot Charts</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
+                            <a href="{% url 'tables' %}"><i class="fa fa-table fa-fw"></i> Tabla</a>
                         </li>
-
-
-                        
-
-                           
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="{% url 'login_view' %}">Login Page</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-
                     </ul>
                 </div>
-                <!-- /.sidebar-collapse -->
             </aside>
-            <!-- /.sidebar -->
-
 
             
             <div id="page-wrapper">
@@ -153,8 +122,8 @@
                                                     datasets: [{
                                                         label: 'Precios',
                                                         data: [{{ precios1 }}, {{ precios2 }}, {{ precios3 }}, {{ precios4 }}],
-                                                        backgroundColor: ['#EE82EE', '#D8BFD8', '#98FB98', '#D2B48C '],
-                                                        borderColor: 'black',
+                                                        backgroundColor: ['darkcyan', 'darkseagreen', 'darkgrey', 'steelblue'],
+                                                        borderColor: 'cyan',
                                                         borderWidth: 1
                                                     }]
                                                 },
@@ -194,8 +163,8 @@
                                                     datasets: [{
                                                         label: 'Empanadas',
                                                         data: [{{ empanadas1 }}, {{ empanadas2 }}, {{ empanadas3 }}, {{ empanadas4 }}],
-                                                        backgroundColor: ['red', 'blue', 'green', 'orange'],
-                                                        borderColor: 'black',
+                                                        backgroundColor: ['darkcyan', 'darkseagreen', 'darkgrey', 'steelblue'],
+                                                        borderColor: 'cyan',
                                                         borderWidth: 1
                                                     }]
                                                 },
@@ -231,14 +200,14 @@
                                         <script>
                                             const ctx3 = document.getElementById('myChart3').getContext('2d');
                                             new Chart(ctx3, {
-                                                type: 'polarArea',
+                                                type: 'pie',
                                                 data: {
                                                     labels: ["Arrachera", "Rib eye", "Churrasco", "Asado de tira"],
                                                     datasets: [{
                                                         label: 'Cortes',
                                                         data: [{{ cortes1 }}, {{ cortes2 }}, {{ cortes3 }}, {{ cortes4 }}],
-                                                        backgroundColor: ['red', 'blue', 'green', 'orange'],
-                                                        borderColor: 'black',
+                                                        backgroundColor: ['darkcyan', 'darkseagreen', 'darkgrey', 'steelblue'],
+                                                        borderColor: 'cyan',
                                                         borderWidth: 1
                                                     }]
                                                 },
@@ -280,8 +249,8 @@
                                                     datasets: [{
                                                         label: 'Guarniciones',
                                                         data: [{{ guarniciones1 }}, {{ guarniciones2 }}, {{ guarniciones3 }}, {{guarniciones4 }}],
-                                                        backgroundColor: ['red', 'blue', 'green', 'orange'],
-                                                        borderColor: 'black',
+                                                        backgroundColor: ['darkcyan', 'darkseagreen', 'darkgrey', 'steelblue'],
+                                                        borderColor: 'cyan',
                                                         borderWidth: 1
                                                     }]
                                                 },
@@ -318,14 +287,14 @@
                                         <script>
                                             const ctx5 = document.getElementById('myChart5').getContext('2d');
                                             new Chart(ctx5, {
-                                                type: 'polarArea',
+                                                type: 'doughnut',
                                                 data: {
                                                     labels: ["Strudel de manzana", "Pastelito de chocolate", "Durazno con cremas", "Alfajor"],
                                                     datasets: [{
                                                         label: 'Postres',
                                                         data: [{{ postres1 }}, {{ postres2 }}, {{ postres3 }}, {{ postres4 }}],
-                                                        backgroundColor: ['#E59866', '#EB984E', '#F5B041 ', '#E67E22'],
-                                                        borderColor: 'black',
+                                                        backgroundColor: ['darkcyan', 'darkseagreen', 'darkgrey', 'steelblue'],
+                                                        borderColor: 'cyan',
                                                         borderWidth: 1
                                                     }]
                                                 },
@@ -364,8 +333,8 @@
                                                     datasets: [{
                                                         label: 'Salsas de las Pastas',
                                                         data: [{{ salsapastas1 }}, {{ salsapastas2 }}, {{ salsapastas3 }}, {{ salsapastas4 }}],
-                                                        backgroundColor: ['#C39BD3', '#AED6F1 ', '#A3E4D7 ', '#F5B7B1 '],
-                                                        borderColor: 'black',
+                                                        backgroundColor: ['darkcyan', 'darkseagreen', 'darkgrey', 'steelblue'],
+                                                        borderColor: 'cyan',
                                                         borderWidth: 1
                                                     }]
                                                 },
@@ -399,14 +368,14 @@
                                         <script>
                                             const ctx7 = document.getElementById('myChart7').getContext('2d');
                                             new Chart(ctx7, {
-                                                type: 'line',
+                                                type: 'pie',
                                                 data: {
                                                     labels: ["Tequila", "Vodka", "Whisky", "no tomo"],
                                                     datasets: [{
                                                         label: 'Alcohol',
                                                         data: [{{ alcohol1 }}, {{ alcohol2 }}, {{ alcohol3 }}, {{ alcohol4 }}],
-                                                        backgroundColor: ['#C39BD3', '#AED6F1 ', '#A3E4D7 ', '#F5B7B1 '],
-                                                        borderColor: 'black',
+                                                        backgroundColor: ['darkcyan', 'darkseagreen', 'darkgrey', 'steelblue'],
+                                                        borderColor: 'cyan',
                                                         borderWidth: 1
                                                     }]
                                                 },
@@ -440,14 +409,14 @@
                                         <script>
                                             const ctx8 = document.getElementById('myChart8').getContext('2d');
                                             new Chart(ctx8, {
-                                                type: 'line',
+                                                type: 'pie',
                                                 data: {
                                                     labels: ["Indio", "Tecate", "Heineken", "No tomo"],
                                                     datasets: [{
                                                         label: 'Cervezas',
                                                         data: [{{ cervezas1 }}, {{ cervezas2 }}, {{ cervezas3 }}, {{ cervezas4 }}],
-                                                        backgroundColor: ['#C39BD3', '#AED6F1 ', '#A3E4D7 ', '#F5B7B1 '],
-                                                        borderColor: 'black',
+                                                        backgroundColor: ['darkcyan', 'darkseagreen', 'darkgrey', 'steelblue'],
+                                                        borderColor: 'cyan',
                                                         borderWidth: 1
                                                     }]
                                                 },
@@ -481,14 +450,14 @@
                                         <script>
                                             const ctx9 = document.getElementById('myChart9').getContext('2d');
                                             new Chart(ctx9, {
-                                                type: 'line',
+                                                type: 'doughnut',
                                                 data: {
                                                     labels: ["Pepsi", "Mirinda", "Manzanita", "7up"],
                                                     datasets: [{
                                                         label: 'Refrescos',
                                                         data: [{{ refrescos1 }}, {{ refrescos2 }}, {{ refrescos3 }}, {{ refrescos4 }}],
-                                                        backgroundColor: ['#C39BD3', '#AED6F1 ', '#A3E4D7 ', '#F5B7B1 '],
-                                                        borderColor: 'black',
+                                                        backgroundColor: ['darkcyan', 'darkseagreen', 'darkgrey', 'steelblue'],
+                                                        borderColor: 'cyan',
                                                         borderWidth: 1
                                                     }]
                                                 },
@@ -529,8 +498,8 @@
                                                         datasets: [{
                                                             label: 'Cafes',
                                                             data: [{{ cafes1 }}, {{ cafes2 }}, {{ cafes3 }}, {{ cafes4 }}],
-                                                            backgroundColor: ['#C39BD3', '#AED6F1 ', '#A3E4D7 ', '#F5B7B1 '],
-                                                            borderColor: 'black',
+                                                            backgroundColor: ['darkcyan', 'darkseagreen', 'darkgrey', 'steelblue'],
+                                                            borderColor: 'cyan',
                                                             borderWidth: 1
                                                         }]
                                                     },
@@ -567,6 +536,8 @@
 
         <!-- jQuery -->
         <script src="{% static 'Js/jquery.min.js' %}"></script>
+        <script src="{% static 'Js/jquery.flot.js' %}"></script>
+        <script src="{% static 'Js/jquery.flot.resize.js' %}"></script>
 
         <!-- Bootstrap Core JavaScript -->
         <script src="{% static 'Js/bootstrap.min.js' %}"></script>
@@ -586,6 +557,12 @@
 
         <!-- Custom Theme JavaScript -->
         <script src="{% static 'Js/startmin.js' %}"></script>
+
+         <!-- Morris Charts JavaScript -->
+         <script src="{% static 'Js/raphael.min.js' %}"></script>
+         <script src="{% static 'Js/morris.min.js' %}"></script>
+         <script src="{% static 'Js/morris-data.js' %}"></script>
+
 
     </body>
 

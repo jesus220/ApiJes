@@ -339,6 +339,15 @@ table.dataTable thead .sorting:after {
     color: #fff;
     background-color: #5cb85c;
 }
+.centered{
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+  
+.panel-heading1{
+    width:1200px; 
+    height:70vh;
+}
 
 .panel-green a {
     color: #5cb85c;

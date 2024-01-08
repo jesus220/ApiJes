@@ -1,6 +1,6 @@
 from telnetlib import LOGOUT
 from rest_framework.views import APIView
-from django.http import HttpRequest
+from django.http import HttpRequest, JsonResponse
 from django.http import HttpResponse
 from .forms import Registro_Form
 from .forms import register as registros
@@ -319,10 +319,34 @@ def chart_view(request):
         'cafes4': cafes4, 
     }
     )
+def index(request):
+    precios = General.objects.filter(precios="$250").count()
+    empanadas = General.objects.filter(empanadas="Elote con queso").count()
+    cortes = General.objects.filter(cortes="Rib eye").count()
+    guarniciones = General.objects.filter(guarniciones="Chorizo argentino").count()
+    postres = General.objects.filter(postres="Strudel de manzana").count()
+    salsapastas = General.objects.filter(salsapastas="salsa boloñesa").count()
+    alcohol = General.objects.filter(alcohol="Tequila").count()
+    cervezas = General.objects.filter(cervezas="Heineken").count()
+    refrescos = General.objects.filter(refrescos="Manzanita").count()
+    cafes = General.objects.filter(cafes="Capuchino").count()
     
-
-
-#def salir(request):
-#    logout(request)
-#    return redirect('login')
-
+    return render(request, 'index.html', context = {
+        
+        'precios': precios,
+        'empanadas': empanadas, 
+        'cortes': cortes, 
+        'guarniciones': guarniciones,
+        'postres': postres,
+        'salsapastas': salsapastas,
+        'alcohol': alcohol,
+        'cervezas': cervezas,
+        'refrescos': refrescos,  
+        'cafes': cafes,
+         }
+    )
+    
+def encuesta_view(_request):
+    encuesta = list(General.objects.values())
+    data = {'encuesta': encuesta}
+    return JsonResponse(data)
