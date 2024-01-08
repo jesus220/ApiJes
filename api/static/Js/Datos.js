@@ -22,7 +22,7 @@ const initDataTable=async() =>{
 
 const encuesta = async () => {
     try {
-        const response = await fetch("https://pibe-argentino.onrender.com/encuesta/");
+        const response = await fetch("http://127.0.0.1:8000/encuesta/", { mode: 'no-cors' });
         const data = await response.json();
 
         let content = '';

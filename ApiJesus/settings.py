@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
 
 ]
 
@@ -61,7 +62,13 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://pibe-argentino.onrender.com",
+    # Puedes agregar otros dominios permitidos si es necesario
 ]
 
 ROOT_URLCONF = 'ApiJesus.urls'
